@@ -12,14 +12,3 @@ body {
     font-family = "Muli-Reg";
 }
 
-p.pizza {
-    color: blue
-}
-
-div.center {
-  margin: auto;
-  width: 50%;
-  border: 3px solid green;
-  padding: 10px;
- font-size: 20px;
-}
