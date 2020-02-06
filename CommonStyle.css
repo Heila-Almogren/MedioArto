@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "Muli-ExtraLightItalic";
+    src: url("Muli-ExtraLightItalic.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'Muli-Reg';
+    src: url("Muli.ttf") format("truetype");
+}
+
+body {
+  background-color: lightblue;
+    font-family = "Muli-Reg";
+}
+
+p.pizza {
+    color: blue
+}
+
+div.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+ font-size: 20px;
+}
