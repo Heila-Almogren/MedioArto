@@ -14,16 +14,18 @@ body {
     font-family = "Muli-Reg";
 }
 
+form.pass{
+    display:contents;
+}
+
 
 h1{
 
     text-align: center;
     margin-top: 250px;
     color: white;
-    
-    
 }
-div.MidStyle{
+div.BoxStyle{
     font-family : "Muli-Reg";
     background-color: darkgray;
     border-radius: 20px;
@@ -36,14 +38,11 @@ div.MidStyle{
     position: absolute;
     left: 30%;
     top: 35%;
-
-    
 }
 
-div.MidStyle:hover{
+div.BoxStyle:hover{
     background: rgba(204, 204, 204, 0.9);
     animation-timing-function: ease-in;
-    
 }
 
 div.Role{
@@ -62,7 +61,18 @@ input {
     
 }
 
-p.fm{
+
+input.pass {
+
+  height: 30px;
+    width: 200px;
+    margin-top: 25px;
+    font-size: 20px;
+    padding-left: 10px;
+    
+}
+
+p.generalStyle{
     display: inline-block;
     float:left;
     clear:left;
@@ -74,11 +84,31 @@ p.fm{
 }
 
 
+.passTextStyle{
+    font-size: 20px;
+}
+
+
+
+
 button.ButtonStyle{
     background-color: darkgray;
     font-family : "Muli-Reg";
     font-size: 18px;
     margin-top: 100px;
+    height: 40px;
+    width: 100px;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 0px;
+}
+
+
+button.FButtonStyle{
+    background-color: darkgray;
+    font-family : "Muli-Reg";
+    font-size: 18px;
+    margin-top: 50px;
     height: 40px;
     width: 100px;
     border-radius: 25px;
@@ -95,14 +125,7 @@ p.forgPass{
     color: antiquewhite;
 }
 
-input.pass{
-    margin-top: 0px;
-    display: inline-block;
-    
-}
 
 div.divalign{
     align-content: center;
-    
-    
 }
