@@ -1,0 +1,108 @@
+@font-face {
+    font-family: "Muli-ExtraLightItalic";
+    src: url("Muli-ExtraLightItalic.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Muli-Reg';
+    src: url("Muli.ttf") format("truetype");
+}
+
+body {
+  background-image: url(335834-PA54JB-814.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family = "Muli-Reg";
+}
+
+
+h1{
+
+    text-align: center;
+    margin-top: 250px;
+    color: white;
+    
+    
+}
+div.MidStyle{
+    font-family : "Muli-Reg";
+    background-color: darkgray;
+    border-radius: 20px;
+    
+    width: 500px;
+    height: 200px;
+    padding : 15px 32px;
+    background: rgba(204, 204, 204, 0.5);
+    box-shadow: -12px 0px 15px 0px rgba(0,0,0,0.2);
+    position: absolute;
+    left: 30%;
+    top: 35%;
+
+    
+}
+
+div.MidStyle:hover{
+    background: rgba(204, 204, 204, 0.9);
+    animation-timing-function: ease-in;
+    
+}
+
+div.Role{
+    float: center;
+}
+
+input {
+  display: inline-block;
+  float: right;
+  height: 30px;
+    width: 200px;
+    margin-top: 25px;
+    margin-right: 100px;
+    font-size: 20px;
+    padding-left: 10px;
+    
+}
+
+p.fm{
+    display: inline-block;
+    float:left;
+    clear:left;
+    text-align:center;
+    margin-top: 25px;
+    margin-left: 80px;
+    font-size: 20px;
+    
+}
+
+
+button.ButtonStyle{
+    background-color: darkgray;
+    font-family : "Muli-Reg";
+    font-size: 18px;
+    margin-top: 100px;
+    height: 40px;
+    width: 100px;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 0px;
+}
+
+button.ButtonStyle:hover{
+    background-color: gray;
+}
+
+
+p.forgPass{
+    color: antiquewhite;
+}
+
+input.pass{
+    margin-top: 0px;
+    display: inline-block;
+    
+}
+
+div.divalign{
+    align-content: center;
+    
+    
+}
