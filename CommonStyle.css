@@ -31,7 +31,7 @@ input {
   float: right;
 }
 
-p.fm{
+p.generalStyle{
     display: inline-block;
     float: left;
     clear: left;
