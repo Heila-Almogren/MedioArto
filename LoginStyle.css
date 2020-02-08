@@ -130,3 +130,7 @@ Button{
 Button:hover{
         background-color:floralwhite;
 }
+
+p.forgotPass{
+    font-size: 12px;
+}
