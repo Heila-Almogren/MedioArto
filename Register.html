@@ -1,70 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
-    <link rel="stylesheet" type="text/css" href="LoginStyle.css">
+<title>Register</title>
+    <link rel="stylesheet" type="text/css" href="RegisterStyle.css">
 </head>
 <body>
+    <div class="mainDiv">
+        <div class="TitleSyle"><h1>Create a New Account</h1></div>
     
-        <h1>Create a New Account</h1>
-    
-    
-<div class="center BoxStyle" >
+
+<div class="BoxStyle" >
     
 
     <form>
-        <p class = "generalStyle">First Name</p>
-        <input type="text" name="firstname" maxlength="15">
-        
-&emsp;
-        
-        <p class = "generalStyle">Last Name</p>
-        <input type="text" name="lastname" maxlength="15">
+       <p>
+           <input type="text" name="firstname" placeholder="First Name" maxlength="15" class="InputStyle">
         
         
         
-        <p class = "generalStyle">Username</p>
-        <input type="text" name="Username" maxlength="15">
+        <input type="text" name="lastname" maxlength="15" class="InputStyle" placeholder="Last name">
+        
+        
+        </p>
         
         
         
-        <p class = "generalStyle">Passworde</p>
-        <input type="password" name="password" minlength="8" maxlength="16">
+        <input type="text" name="Username" maxlength="15" class="InputStyle" placeholder="Username">
         
         
         
-        <p class = "generalStyle">email</p>
-        <input type="email" name="email">
+        
+        <input type="password" name="password" minlength="8" maxlength="16" class="InputStyle" placeholder="Password">
         
         
         
-        <p class = "generalStyle">Phone</p>
-        <input type="tel" name="email">
         
-    
-       
-            <input type="radio" name="role" value="Admin">
-        <p>Admin</p>
-        <input type="radio" name="role" value="Artist">
-        <p>Artist</p>
-        
-            <p class = "generalStyle">
-            <input type="radio" name="role" value="Guest" title="Guest">Guest</p>
-        
-      
-        
-            
+        <input type="email" name="email" class="InputStyle" placeholder="email">
         
         
-    
         
-        <button type="submit" class = "ButtonStyle">Submit</button>
         
-        <button type="reset" class = "ButtonStyle">Reset</button>
+        <input type="tel" name="telephone" class="InputStyle" placeholder="Phone Number">
 
     </form>
     
     </div>
+        </div>
 
 </body>
 </html>
