@@ -5,32 +5,39 @@
     <link rel="stylesheet" type="text/css" href="LoginStyle.css">
 </head>
 <body>
+     <div class="mainDiv">
+    <div class="TitleSyle">
   
     
          <h1>Login</h1>
+    </div>
     
-    
-<div class="center BoxStyle" >
+<div class="BoxStyle" >
     
 
     <form>
-        <p class = "fm">Username</p>
-        <input type="text" name="firstname" maxlength="15" class = "log">
+        <div>
+            <input type="text" name="firstname" maxlength="15" class = "InputStyle" placeholder = "Username">
+            
+        <input type="password" name="password" minlength="8" maxlength="16" class = "InputStyle"  placeholder = "Password">
+        </div>
         
-<br>
-        
-        
-        <p class = "fm">Password</p>
-        <input type="password" name="password" minlength="8" maxlength="16" class = "log">
 
-        <button type="submit" class = "ButtonStyle">login</button>
-        <p class = forgPass>Forgot Password?</p>
+        <br>
+        
+        
+        
+        
+<div>
+    <button type="submit" class = "ButtonStyle">login</button>
+        </div>
+        
         
     </form>
     
     </div>
-    
- 
+    <p class = FormTextStyle>Forgot Password?</p>
+ </div>
        
 
 </body>

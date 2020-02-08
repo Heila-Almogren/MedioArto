@@ -7,125 +7,126 @@
     src: url("Muli.ttf") format("truetype");
 }
 
+@keyframes inputAnimation {
+  from {width: 100px;}
+  to {width: 250px;}
+}
+
 body {
   background-image: url(335834-PA54JB-814.jpg);
     background-size: cover;
-    background-attachment: fixed;
     font-family = "Muli-Reg";
+    display: inline-block;
 }
 
-form.pass{
-    display:contents;
+div.mainDiv{
+    display: inline-block;
 }
 
-
-h1{
-
-    text-align: center;
-    margin-top: 250px;
-    color: white;
+div.TitleSyle{
+    color: antiquewhite;
+    width: 500px;
+    height: 200px;
+    position:fixed;
+    left:30%;
+    top: 20%;
 }
+
 div.BoxStyle{
     font-family : "Muli-Reg";
     background-color: darkgray;
     border-radius: 20px;
-    
-    width: 500px;
-    height: 200px;
-    padding : 15px 32px;
+    display: inline-block;
+    width: 250px;
+    height: auto;
+    padding : 15px 10px 15px 20px;
     background: rgba(204, 204, 204, 0.5);
     box-shadow: -12px 0px 15px 0px rgba(0,0,0,0.2);
-    position: absolute;
-    left: 30%;
-    top: 35%;
+    position:fixed;
+    left:30%;
+    top: 30%;
 }
 
-div.BoxStyle:hover{
-    background: rgba(204, 204, 204, 0.9);
-    animation-timing-function: ease-in;
-}
-
-div.Role{
-    float: center;
-}
-
-input {
-  display: inline-block;
-  float: right;
-  height: 30px;
-    width: 200px;
-    margin-top: 25px;
-    margin-right: 100px;
-    font-size: 20px;
-    padding-left: 10px;
-    
-}
-
-
-input.pass {
-
-  height: 30px;
-    width: 200px;
-    margin-top: 25px;
-    font-size: 20px;
-    padding-left: 10px;
-    
-}
-
-p.generalStyle{
+p.FormTextStyle{
     display: inline-block;
     float:left;
     clear:left;
-    text-align:center;
-    margin-top: 25px;
     margin-left: 80px;
     font-size: 20px;
     
 }
 
-
-.passTextStyle{
-    font-size: 20px;
+input {
+  display: inline-block;
+  float: right;
+  clear: right;
+  font-size: 20px;
+  padding-left: 10px;
+  margin-right: 20px;  
 }
 
 
-
-
-button.ButtonStyle{
-    background-color: darkgray;
+input.InputStyle{
     font-family : "Muli-Reg";
-    font-size: 18px;
-    margin-top: 100px;
-    height: 40px;
-    width: 100px;
-    border-radius: 25px;
-    border-style: solid;
-    border-width: 0px;
+      display: inline-block;
+  float: left;
+  clear: left;
+  font-size: 20px;
+   
+    width: 100;
+  padding-left: 10px;
+  margin-right: 20px;
+    
+    background-color: rgba(0, 0, 0, 0.0);
+    border-bottom-color: black;
+    border-bottom-width:2px;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-top-style: hidden;
+    margin-bottom: 10px;
+    
 }
 
 
-button.FButtonStyle{
-    background-color: darkgray;
-    font-family : "Muli-Reg";
-    font-size: 18px;
-    margin-top: 50px;
-    height: 40px;
-    width: 100px;
-    border-radius: 25px;
-    border-style: solid;
-    border-width: 0px;
+
+input.InputStyle:hover{
+
+  animation-name: inputAnimation;
+  animation-duration: 0.5s;
 }
 
-button.ButtonStyle:hover{
-    background-color: gray;
+input.InputStyle:required{
+border-bottom-color: red;
+}
+
+::-webkit-input-placeholder{
+    color: white;
+    
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: opacity 0.0s 0.0s none;
+  opacity: 0;
+    
 }
 
 
-p.forgPass{
-    color: antiquewhite;
+Button{
+    background-color:beige;
+    border-color: #484848;
+    border-radius: 5px;
+    border-style:none;
+        height: 35px;
+    width: 80px;
+    margin-top: 25px;
+    margin-left: 80px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+     font-size: 15px;
+    font-family: 'Muli-Reg';
+    
 }
 
-
-div.divalign{
-    align-content: center;
+Button:hover{
+        background-color:floralwhite;
 }
