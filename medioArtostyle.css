@@ -30,6 +30,8 @@ div.titleDiv {
     font-size: 80px;
     font-family: "Muli-Reg";
     text-shadow: 0 0 10px #FFFFFF, 0 0 5px #FFFFFF;
+    position: fixed;
+    top:50%;
 }
 
 .nav {
@@ -43,7 +45,7 @@ position:fixed;
 }
 
 .logo {
-  width: 50px;
+  width: 100px;
   height: 50px;
 }
 
@@ -66,3 +68,83 @@ position:fixed;
   color: white;
 }
 
+
+
+
+
+
+
+
+
+//---------------------------------------------------
+// CHANGE THESE
+$series: 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
+$duration: 0.5
+$transition: 1
+
+//---------------------------------------------------
+// APPEND EXTRA ITEM - An extra item is needed if the series is of odd length
+@if abs(length($series)) % 2 == 1
+  $lastItem: nth($series, 1)
+  $series: append($series, $lastItem)
+
+//---------------------------------------------------
+// DON'T TOUCH THESE
+$seriesLength: length($series)
+$seriesSplitLength: $seriesLength / 2
+$itemDuration: $duration + $transition
+$twiceItemDuration: $itemDuration * 2
+$totalDuration: $itemDuration * $seriesLength
+
+//---------------------------------------------------
+// STYLE STUFF
+body
+  background: #44baa8
+
+.text
+  position: absolute
+  left: 50%
+  top: 50%
+  color: yellow
+  font-size: 300px
+  filter: url(#gooey)
+      
+  &::before, &::after
+    position: absolute
+    opacity: 0
+    transform: translate(-50%,-50%)
+    animation-duration: $totalDuration + s
+    animation-timing-function: ease
+    animation-iteration-count: infinite
+    filter: blur(9px)
+
+  &::before
+    content: nth($series, $seriesLength - 1)
+    animation-name: items-odd
+
+  &::after
+    content: nth($series, $seriesLength)
+    animation-name: items-even
+    animation-delay: $itemDuration + s
+
+//---------------------------------------------------
+// TRANSITION ANIMATIONS
+
+=keyframes($index)
+  @for $i from 1 through $seriesLength
+    #{percentage((1 / $seriesLength) * $i - ($duration / $totalDuration))}
+      opacity: abs($i) % 2
+    #{percentage((1 / $seriesLength) * $i)}
+      opacity: abs($i) % 2
+  @for $i from 1 through $seriesSplitLength
+    $item: $i * 2 - $index
+    #{percentage(($i - 1) * (1 / $seriesSplitLength))}
+      content: nth($series, $item)
+    #{percentage($i * (1 / $seriesSplitLength) - 0.000001)}
+      content: nth($series, $item)
+
+@keyframes items-odd
+  +keyframes(1)
+
+@keyframes items-even
+  +keyframes(0)
