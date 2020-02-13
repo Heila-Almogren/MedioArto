@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MEDDIO ARTO</title>
+    <link rel ="stylesheet" type ="text-css" href="VisitorStyle.css">
+    
+    <!--javascript of profile pop-up menu-->
+    <script>
+        function openForm() {
+            
+            var viewButton = document.getElementById("myForm");
+                viewButton.style.display = "block"; }
+        
+        function closeForm() {
+                document.getElementById("myForm").style.display = "none";   }
+    </script>
+    
+
+</head>
+
+<body>
+
+    
+  
+  
+
+      
+      <!--Navigation bar-->
+<div class="nav">
+  
+    <a class="active" onclick="openForm()">
+            <img src="Neutral-placeholder-profile.jpg" class="userProfileIcon"></a>
+    <a href="Login.html"><p class="menuText">About</p></a>
+    <a href="#About"><p class="menuText">Artists</p></a>
+    <a href="#About"><p class="menuText">Artifacts</p></a>
+            <img src="MedioArtoLogoFull.png" alt="logo" class="logo">
+</div>
+      
+      
+      
+   <!--pop-up menu of profile image-->
+   
+<div class="form-popup" id="myForm">
+  <form class="form-container">
+      
+      <p class ="ProfileTitle">
+      Hello, Sara! <button class="closeButton" type="submit" onclick="closeForm()">&times;</button></p>
+      
+      <div class="ProfileOption">
+      &#x2699; &nbsp; Edit Eccount
+      </div>
+      
+      <div class="ProfileOption">
+      &#10084;&#65039; &nbsp; Favorite List
+      </div>
+      
+      <div class="ProfileOption">
+      &#x1f511; &nbsp; Logout
+      </div>
+    
+  </form>
+</div>
+    
+    
+    
+    
+    <!--side menu-->
+    
+    <div class="sideMenu">
+    
+
+    
+    
+    </div>
+    
+    
+</body>
+</html>
