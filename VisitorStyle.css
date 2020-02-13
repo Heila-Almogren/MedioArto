@@ -187,8 +187,10 @@ background-color: rgba(0, 0, 0, 0.0);
 }
 
 
-.itemsMenu{
+.SideMenu{
     
-    height: 100px;
+    height: 500px;
     width: 100px;
+    color: #f2f2f2;
+    
 }
