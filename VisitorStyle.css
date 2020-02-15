@@ -23,7 +23,8 @@
 
 body{
     background-image: url(Images/43%20copy.png);
-    background-size: cover;
+    background-size:auto;
+    
     
 }
 
@@ -78,19 +79,24 @@ position:fixed;
   color: #f2f2f2;
   text-align: center;
   height: 50px;
-  text-decoration: none;
+  
   font-size: 17px;
+    
 }
 
 
 .nav a:hover {
   background-color: #ddd;
   color: black;
+    
 }
 
 .nav a.active {
 background-color: rgba(0, 0, 0, 0.0);
     color: white;
+    
+    
+    
 }
 
 {box-sizing: border-box;}
@@ -132,6 +138,7 @@ background-color: rgba(0, 0, 0, 0.0);
     font-size: 12px;
     padding: 7px;
     
+    
 }
 
 .ProfileTitle{
@@ -142,6 +149,7 @@ background-color: rgba(0, 0, 0, 0.0);
 .ProfileOption:hover{
     font-size: 15px;
         background-color:rgba(201, 201, 201, 0.1);
+    text-decoration: none !important;
 
 }
 
@@ -153,10 +161,11 @@ background-color: rgba(0, 0, 0, 0.0);
   border: 3px solid #f1f1f1;
   z-index: 9;
     background-color: white;
+    text-decoration: none !important;
 }
 
 .form-container {
-  
+  text-decoration: none !important;
   width: 150px;
   background-color: white;
 }
@@ -311,18 +320,24 @@ background-color: rgba(0, 0, 0, 0.0);
 /*Scroll Bar */
 ::-webkit-scrollbar {
   width: 10px;
+    opacity: 0;
     border-radius: 20px;
+    margin-right: 20px;
 }
 
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
+    opacity: 0.5;
+    
   background: white; 
-    border-radius: 20px;
+    
+    
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
+    opacity: 0.5;
   background: #555; 
     border-radius: 20px;
 }
@@ -568,6 +583,9 @@ div.favouriteList{
     width: 300px;
     height: 500px;
     overflow: scroll;
+    border-color: black;
+    border-radius: 20px;
+    border-style: dashed;
 }
 
 div.FavouriteListTitle {
@@ -622,4 +640,24 @@ vertical-align: middle;
     width: 150px;
     font-family: "Muli-Reg";
     box-shadow: 15px 0px 15px 0px rgba(0,0,0,0.2);
+}
+
+
+p.tail{
+    font-family: "Muli-Reg";
+    
+    color: white;
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    text-align: center;
+    opacity: 0.5;
+}
+
+a, a:link, a:visited, a:active, a:hover {
+    border-bottom-style: none;
+    text-decoration:none;
+    border:0!important;
+color: inherit;
 }
