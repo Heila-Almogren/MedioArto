@@ -1,11 +1,11 @@
 @font-face {
-    font-family: "Muli-ExtraLightItalic";
-    src: url("Muli-ExtraLightItalic.ttf") format("truetype");
+    font-family: "fonts/Muli-ExtraLightItalic";
+    src: url("fonts/Muli-ExtraLightItalic.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Muli-Reg";
-    src: url("Muli.ttf") format("truetype");
+    src: url("fonts/Muli.ttf") format("truetype");
 }
 
 #myVideo {
@@ -44,8 +44,8 @@ position:fixed;
 }
 
 .logo {
-  width: 100px;
-  height: 50px;
+  width: 95px;
+  height: 45px;
 }
 
 .nav a {
