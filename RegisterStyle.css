@@ -21,6 +21,7 @@ body {
 
 div.mainDiv{
     display: inline-block;
+    
 }
 
 div.TitleSyle{
@@ -43,8 +44,8 @@ div.BoxStyle{
     width: 300px;
     height: auto;
     padding : 15px 10px 15px 20px;
-    background: rgba(204, 204, 204, 0.5);
-    box-shadow: -12px 0px 15px 0px rgba(0,0,0,0.2);
+    background: rgba(37, 116, 169, 0.5);
+    box-shadow: -12px 0px 15px 0px rgba(44, 130, 201,0.2);
     position:fixed;
     left:30%;
     top: 30%;

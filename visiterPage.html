@@ -14,6 +14,7 @@
         
         function closeForm() {
                 document.getElementById("myForm").style.display = "none";   }
+        
     </script>
     
 
@@ -26,6 +27,9 @@
   
 
       
+           
+    
+      
       <!--Navigation bar-->
 <div class="nav">
   
@@ -34,7 +38,7 @@
     <a href="Login.html"><p class="menuText">About</p></a>
     <a href="#About"><p class="menuText">Artists</p></a>
     <a href="#About"><p class="menuText">Artifacts</p></a>
-            <img src="Images/MedioArtoLogoFull.png" alt="logo" class="logo">
+            <img href="MedioArto.html" src="Images/final.png" alt="logo" class="logo">
 </div>
       
       
@@ -51,13 +55,19 @@
       &#x2699; &nbsp; Edit Eccount
       </div>
       
-      <div class="ProfileOption">
-      &#10084;&#65039; &nbsp; Favorite List
-      </div>
       
+      
+      <a href="FavouriteList.html">
+      <div class="ProfileOption">
+      &#10084;&#65039; &nbsp; Favourite List
+      </div></a>
+      
+      
+      
+      <a href="MedioArto.html">
       <div class="ProfileOption">
       &#x1f511; &nbsp; Logout
-      </div>
+      </div></a>
     
   </form>
 </div>
@@ -65,9 +75,10 @@
     
     
     
+    
     <!--side menu-->
     
-    <div class="SideMenu">
+    <div class="SideMenu" id="SideMenu" onclick="moveMenu()">
         <form>
         
     <p class="SideMenuTitle">What's in your recycle bin?
@@ -208,5 +219,12 @@
 		<a href="http://www.flickr.com/photos/nataliedowne/2339184562/in/set-72157604232220981/" class="polaroid img15"><img src="http://media.24ways.org/2009/14/img/us.jpg" alt="">Us in a blue cave on the Franz Josef glacier</a>
 
 	</div>
+    
+    
+    
+    <p class="tail">
+        Medio Arto &nbsp; |  &nbsp; About  &nbsp; Site Map
+    </p>
+    
 </body>
 </html>
