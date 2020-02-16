@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MEDDIO ARTO</title>
+    <link rel ="stylesheet" type ="text-css" href="VisitorStyle.css">
+    
+    <!--javascript of profile pop-up menu-->
+    <script>
+        function openForm() {
+            
+            var viewButton = document.getElementById("myForm");
+                viewButton.style.display = "block"; }
+        
+        function closeForm() {
+                document.getElementById("myForm").style.display = "none";   }
+        
+    </script>
+    
+
+</head>
+
+<body>
+
+    
+  
+  
+
+      
+      <!--Navigation bar-->
+<div class="nav">
+  
+    <a class="active" onclick="openForm()">
+            <img src="Images/Neutral-placeholder-profile.jpg" class="userProfileIcon"></a>
+    <a href="Login.html"><p class="menuText">About</p></a>
+    <a href="#About"><p class="menuText">Artists</p></a>
+    <a href="#About"><p class="menuText">Artifacts</p></a>
+            <img href="MedioArto.html" src="Images/MedioArtoLogoFull.png" alt="logo" class="logo">
+</div>
+      
+      
+      
+   <!--pop-up menu of profile image-->
+   
+<div class="form-popup" id="myForm">
+  <form class="form-container">
+      
+      <p class ="ProfileTitle">
+      Hello, Sara! <button class="closeButton" type="submit" onclick="closeForm()">&times;</button></p>
+      
+      <div class="ProfileOption">
+      &#x2699; &nbsp; Edit Eccount
+      </div>
+      
+      
+      
+      <a href="#About">
+      <div class="ProfileOption">
+      &#10084;&#65039; &nbsp; Favourite List
+      </div></a>
+      
+      
+      
+      <a href="MedioArto.html">
+      <div class="ProfileOption">
+      &#x1f511; &nbsp; Logout
+      </div></a>
+    
+  </form>
+</div>
+    
+    
+    
+    
+
+    
+    
+   
+    
+    <div class="FavouriteListTitle">
+    My Favourite List!
+    </div>
+    <div class="favouriteList">
+         
+        
+            <label><input type="checkbox" checked>
+  <div class="like-btn-svg"></div>
+</label>
+        <div class="FavouriteItem">
+            Item 1
+        </div>
+        
+         <label><input type="checkbox" checked>
+  <div class="like-btn-svg"></div>
+</label>
+        <div class="FavouriteItem">
+            Item 2
+        </div>
+         <label><input type="checkbox" checked>
+  <div class="like-btn-svg"></div>
+</label>
+        <div class="FavouriteItem">
+            Item 3
+        </div>
+         
+        <label><input type="checkbox" checked>
+  <div class="like-btn-svg"></div>
+</label>
+        
+        <div class="FavouriteItem">
+            Item 4
+        </div>
+        
+        
+        <label><input type="checkbox" checked>
+  <div class="like-btn-svg"></div>
+</label>
+        
+        <div class="FavouriteItem">
+            Item 5
+        </div>
+        
+        
+        <label><input type="checkbox" checked>
+  <div class="like-btn-svg"></div>
+</label>
+        
+        <div class="FavouriteItem">
+            Item 6
+        </div>
+        
+        
+        <label><input type="checkbox" checked>
+  <div class="like-btn-svg"></div>
+</label>
+        
+        <div class="FavouriteItem">
+            Item 7
+        </div>
+        
+        
+    </div>
+    
+    
+    <p class="tail">
+        Medio Arto &nbsp; |  &nbsp; About  &nbsp; Site Map
+    </p>
+    
+    
+    
+    
+    
+
+</body>
+</html>
