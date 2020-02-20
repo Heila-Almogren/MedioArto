@@ -1,10 +1,10 @@
 @font-face {
     font-family: "Muli-ExtraLightItalic";
-    src: url("Muli-ExtraLightItalic.ttf") format("truetype");
+    src: url("fonts/Muli-ExtraLightItalic.ttf") format("truetype");
 }
 @font-face {
     font-family: 'Muli-Reg';
-    src: url("Muli.ttf") format("truetype");
+    src: url("fonts/Muli.ttf") format("truetype");
 }
 
 @keyframes inputAnimation {
@@ -13,7 +13,7 @@
 }
 
 body {
-  background-image: url(335834-PA54JB-814.jpg);
+  background-image: url(Images/20.jpg);
     background-size: cover;
     font-family = "Muli-Reg";
     display: inline-block;
@@ -21,15 +21,19 @@ body {
 
 div.mainDiv{
     display: inline-block;
+    
 }
 
 div.TitleSyle{
+    font-family: "Muli-ExtraLightItalic";
+    font-size: 15px;
+    
     color: antiquewhite;
-    width: 500px;
+    width: 200px;
     height: 200px;
     position:fixed;
     left:30%;
-    top: 20%;
+    top: 10%;
 }
 
 div.BoxStyle{
@@ -40,8 +44,8 @@ div.BoxStyle{
     width: 300px;
     height: auto;
     padding : 15px 10px 15px 20px;
-    background: rgba(204, 204, 204, 0.5);
-    box-shadow: -12px 0px 15px 0px rgba(0,0,0,0.2);
+    background: rgba(37, 116, 169, 0.5);
+    box-shadow: -12px 0px 15px 0px rgba(44, 130, 201,0.2);
     position:fixed;
     left:30%;
     top: 30%;
