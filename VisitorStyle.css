@@ -648,7 +648,7 @@ vertical-align: middle;
 }
 
 
-p.tail{
+p.tailtext{
     font-family: "Muli-Reg";
     
     color: white;
@@ -658,6 +658,14 @@ p.tail{
     width:100%;
     text-align: center;
     opacity: 0.5;
+}
+
+
+div.tail{
+    height: 100px;
+    position: fixed;
+    bottom: 0px;
+    background-color: black;
 }
 
 a, a:link, a:visited, a:active, a:hover {
