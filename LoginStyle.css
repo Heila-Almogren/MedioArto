@@ -13,7 +13,7 @@
 }
 
 body {
-  background-image: url(Images/335834-PA54JB-814.jpg);
+background-image: url(Images/20.jpg);
     background-size: cover;
     font-family = "Muli-Reg";
     display: inline-block;
@@ -24,12 +24,15 @@ div.mainDiv{
 }
 
 div.TitleSyle{
+    font-family: "Muli-ExtraLightItalic";
+    font-size: 15px;
+    
     color: antiquewhite;
-    width: 500px;
+    width: 200px;
     height: 200px;
     position:fixed;
     left:30%;
-    top: 20%;
+    top: 15%;
 }
 
 div.BoxStyle{
