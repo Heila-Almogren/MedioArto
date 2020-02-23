@@ -93,7 +93,7 @@ div.footer{
     background-color: rgba(0, 0, 0, 0.5);
     height: 170px;
     min-width: 100%;
-    margin-top: 150px;
+    margin-top: 1000px;
     padding: 20px;
     overflow:scroll;
 }
