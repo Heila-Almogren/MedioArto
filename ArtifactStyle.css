@@ -1,0 +1,186 @@
+@font-face {
+    font-family: "Muli-ExtraLightItalic";
+    src: url("fonts/Muli-ExtraLightItalic.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Muli-Reg';
+    src: url("fonts/Muli.ttf") format("truetype");
+}
+
+body {
+background-image: url(Images/20.jpg);
+    background-size: cover;
+    font-family = "Muli-Reg";
+    display: inline-block;
+    min-width: 100%;
+}
+
+
+
+div.mainDiv{
+    display: inline-block;
+    border-radius: 30px;
+    border-color: orange;
+    border-style: dashed;
+    padding: 20px;
+    border-width: medium;
+    min-width: 90%;
+    margin: 5px;
+}
+
+
+div.TitleSyle{
+    font-family: "Muli-Reg";
+    font-size: 40px;
+    height: 80px;
+    color: black;
+    min-width: 100%;
+    
+    border-bottom-color: dodgerblue;
+    border-bottom-style: dashed;
+}
+
+div.ArtImg{
+    
+    
+    display: block;
+    width: 250px;
+    height: 250px;
+
+    margin-left: 20px;
+   border-radius: 50%;
+    
+    border-color: white;
+    border-style: dashed;
+    padding: 20px;
+}
+
+.ArtDes{
+    font-family : "Muli-Reg";
+    margin-left: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 10px;
+    border-color: white;
+    border-style: dashed;
+    padding: 20px;
+    border-width: medium;
+    height: auto;
+    width: 250px;
+}
+
+
+.ArtHow{
+    font-family : "Muli-Reg";
+    margin-left: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 10px;
+    border-color: white;
+    border-style: dashed;
+    padding: 20px;
+    border-width: medium;
+    height: auto;
+    width: auto;
+}
+
+div.collect{
+    position:relative;
+    margin-left:10%;
+    margin-bottom: 5%;
+    display: flex;
+}
+
+
+img{
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    
+}
+
+
+div.HorizOrder{
+    display: inline-block;
+}
+
+.num{
+    font-family: "Muli-Reg";
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+.like-btn-svg {
+  width: 80px;
+  height: 80px;
+  background: url(https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png) no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+    display: inline-block;
+}
+
+input[type="checkbox"] {
+  display:none;
+}
+
+input:checked + .like-btn-svg{
+  transition: background 1s steps(28);
+  animation: fave-like-btn-svg 1s steps(28);
+  background-position: -2800px 0;
+}
+
+@keyframes fave-like-btn-svg {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2800px 0;
+  }
+}
+
+
+
+
+input.commentBox{
+    width: 500px;
+    height: 50px;
+    border-radius: 25px;
+    border-style: none;
+    text-decoration: none;
+    padding-left:15px;
+    font-size: 20px;
+}
+
+.ReaderAlign{
+    text-align: center;
+}
+
+table{
+    font-family :"Muli-Reg";
+}
+
+
+div.ReaderField{
+    padding-top: 20px;
+    border-top-color: green;
+    border-top-style: dashed;
+}
+
+.commentButton{
+    border-radius: 25px;
+    border-style: none;
+    text-decoration: none;
+    background-color: deepskyblue;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    
+}

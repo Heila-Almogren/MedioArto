@@ -3,53 +3,65 @@
 <head>
 <title>Register</title>
     <link rel="stylesheet" type="text/css" href="RegisterStyle.css">
+    
+    <Script>
+        function RegisterCheck(){
+            //Register Check here (empty field, inapproporiate format etc)
+            var s= document.getElementById("ss");
+            s.style.display = "block";
+
+
+            
+        }
+    </Script>
+    
 </head>
 <body>
     <div class="mainDiv">
         <div class="TitleSyle"><h1>Create a New Account</h1></div>
     
-
+    <div class="collect">
 <div class="BoxStyle" >
     
 
-    <form>
+    <form name="RegisterForm">
        <p>
-           <input type="text" name="firstname" placeholder="First Name" maxlength="15" class="InputStyle">
+           <input type="text" name="firstname" placeholder="First Name" maxlength="15" class="InputStyle" id="1">
         
         
         
-        <input type="text" name="lastname" maxlength="15" class="InputStyle" placeholder="Last name">
+        <input type="text" name="lastname" maxlength="15" class="InputStyle" placeholder="Last name" id="2">
         
         
         </p>
         
         
         
-        <input type="text" name="Username" maxlength="15" class="InputStyle" placeholder="Username">
+        <input type="text" name="Username" maxlength="15" class="InputStyle" placeholder="Username" id="3">
         
         
         
         
-        <input type="password" name="password" minlength="8" maxlength="16" class="InputStyle" placeholder="Password">
+        <input type="password" name="password" minlength="8" maxlength="16" class="InputStyle" placeholder="Password" id="4">
         
         
         
         
-        <input type="email" name="email" class="InputStyle" placeholder="email">
+        <input type="email" name="email" class="InputStyle" placeholder="email" id="5">
         
         
         
         
-        <input type="tel" name="telephone" class="InputStyle" placeholder="Phone Number">
+        <input type="tel" name="telephone" class="InputStyle" placeholder="Phone Number" id="6">
         
-        <select class="select-css InputStyle">
+        <select class="select-css InputStyle" id="7">
     <option>Role</option>
-    <option>Admin</option>
+    
     <option>Artist</option>
     <option>Visitor</option>
 </select>
   <p>
-      <button type="submit" class = "ButtonStyle" onclick="Register.html">Submit</button>
+      <button type="submit" class = "ButtonStyle" onclick="RegisterCheck()" value="submit">Submit</button>
         
         <button type="reset" class = "ButtonStyle">Reset</button>
         </p>
@@ -57,8 +69,15 @@
 
         
     </form>
-    
     </div>
+    
+        
+        <div class="success" id="ss">
+            Accounted Created Successfuly
+        </div>
+        
+        
+        </div>
         </div>
 
 </body>
