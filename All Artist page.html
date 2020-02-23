@@ -4,7 +4,18 @@
 <head>
   <title>MEDDIO ARTO</title>
             <link rel ="stylesheet" type ="text-css" href="All%20Artist%20page.css">
-
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <!--javascript of profile pop-up menu-->
+    <script>
+        function openForm() {
+            
+            var viewButton = document.getElementById("myForm");
+                viewButton.style.display = "block"; }
+        
+        function closeForm() {
+                document.getElementById("myForm").style.display = "none";   }
+        
+    </script>
   </head>
 <body>
 
@@ -36,9 +47,7 @@
       <p class ="ProfileTitle">
       Hello, Sara! <button class="closeButton" type="submit" onclick="closeForm()">&times;</button></p>
       
-      <div class="ProfileOption">
-      &#x2699; &nbsp; Edit Eccount
-      </div>
+      
       
       <div class="ProfileOption">
       &#10084;&#65039; &nbsp; Favorite List
