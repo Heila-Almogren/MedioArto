@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "Muli-ExtraLightItalic";
+    src: url("fonts/Muli-ExtraLightItalic.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Muli-Reg';
+    src: url("fonts/Muli.ttf") format("truetype");
+}
+
+body {
+background-image: url(Images/20.jpg);
+    background-size: cover;
+    font-family = "Muli-Reg";
+    display: inline-block;
+}
+
+div.mainDiv{
+    display: inline-block;
+}
+
+
+div.TitleSyle{
+    font-family: "Muli-ExtraLightItalic";
+    font-size: 15px;
+    
+    color: antiquewhite;
+    width: 200px;
+    height: 200px;
+    position:fixed;
+    left:30%;
+    top: 15%;
+}
+
+div.BoxStyle{
+    
+    
+    display: block;
+    width: 350px;
+    height: auto;
+    
+
+    
+    
+    
+    font-family : "Muli-Reg";
+    margin-left: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 10px;
+    border-color: white;
+    border-style: dashed;
+    padding: 20px;
+    text-align: justify;
+    
+}
+
+div.team{
+    font-family : "Muli-Reg";
+    margin-left: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 10px;
+    border-color: white;
+    border-style: dashed;
+    padding: 20px;
+}
+
+div.collect{
+    position:fixed;
+    left:30%;
+    top: 30%;
+    display: flex;
+}

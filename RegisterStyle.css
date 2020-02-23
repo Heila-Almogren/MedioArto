@@ -24,6 +24,13 @@ div.mainDiv{
     
 }
 
+div.collect{
+    position:fixed;
+    left:30%;
+    top: 30%;
+    display: flex;
+}
+
 div.TitleSyle{
     font-family: "Muli-ExtraLightItalic";
     font-size: 15px;
@@ -46,9 +53,7 @@ div.BoxStyle{
     padding : 15px 10px 15px 20px;
     background: rgba(37, 116, 169, 0.5);
     box-shadow: -12px 0px 15px 0px rgba(44, 130, 201,0.2);
-    position:fixed;
-    left:30%;
-    top: 30%;
+
 }
 
 p.FormTextStyle{
@@ -180,4 +185,22 @@ Button{
 
 Button:hover{
         background-color:floralwhite;
+}
+
+div.success{
+    display: none;
+    font-family : "Muli-Reg";
+    font-size: 20px;
+    color: white;
+    margin: 100px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+    border-color: white;
+    border-style: dashed;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
 }
