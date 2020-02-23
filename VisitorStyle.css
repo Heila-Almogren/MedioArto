@@ -22,7 +22,7 @@
 }
 
 body{
-    background-image: url(Images/43%20copy.png);
+    background-image: url(Images/20.jpg);
     background-size:auto;
     
     
@@ -208,6 +208,14 @@ background-color: rgba(0, 0, 0, 0.0);
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
+
+
+
+
+
+
+
+
 
 
 .SideMenu{
@@ -673,4 +681,101 @@ a, a:link, a:visited, a:active, a:hover {
     text-decoration:none;
     border:0!important;
     color: inherit;
+}
+
+
+
+
+
+
+
+
+div.footer{
+    
+    font-family: "Muli-ExtraLightItalic";
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 150px;
+    min-width: 100%;
+    
+    margin-top: 360px;
+    margin-top: 360px;
+    padding: 50px;
+    overflow:scroll;
+}
+
+div.footerC{
+    display:inline-grid;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    
+}
+
+div.col{
+    font-size: 14px;
+    display:flex;
+    position: inherit;
+    margin: 3px;
+    
+}
+
+div.brief{
+    font-family: "Muli-Reg";
+    text-align: justify;
+    border-right-color: solid;
+    border-right-style: dashed;
+    padding-right: 20px;
+    width: 250px;
+   font-weight: 400;
+    
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 12px;
+    height: 12px;
+  
+  text-decoration: none;
+  border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
 }
