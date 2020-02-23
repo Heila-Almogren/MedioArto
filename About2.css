@@ -1,0 +1,401 @@
+
+div.titleDiv {
+    font-size: 80px;
+    font-family: "Muli-Reg";
+    text-shadow: 0 0 10px #FFFFFF, 0 0 5px #FFFFFF;
+    position: fixed;
+    top:50%;
+}
+
+.nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    font-family: "Muli-Reg";
+}
+
+.logo {
+  width: 100px;
+  height: 50px;
+    margin-left: 20px;
+}
+
+
+.userProfileIcon{
+      width: 40px;
+  height: 40px;
+    border-radius: 50%;
+    margin:7px;
+    
+}
+
+.menuText{
+     margin: 14px 16px;
+    color: white;
+    
+}
+
+
+
+.nav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  height: 50px;
+  
+  font-size: 17px;
+    
+}
+
+
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+    
+}
+
+.nav a.active {
+background-color: rgba(0, 0, 0, 0.0);
+    color: white;
+    
+    
+    
+}
+
+{box-sizing: border-box;}
+
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+.closeButton{
+    
+    width: 20px;
+    height: 20px;
+    float:right;
+    clear:right;
+    border:none;
+    margin-right: 10px;
+    border-radius: 50%;
+    border-color: white;
+    background-color:whitesmoke;
+    font-size: 10px;
+    color: darkgray;
+    
+    
+}
+
+
+.ProfileOption{
+    font-family: "Muli-Reg";
+    font-size: 12px;
+    padding: 7px;
+    
+    
+}
+
+.ProfileTitle{
+    font-family: "Muli-Reg";
+    margin-left: 10px;
+}
+
+.ProfileOption:hover{
+    font-size: 15px;
+        background-color:rgba(201, 201, 201, 0.1);
+    text-decoration: none !important;
+
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 50px;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+    background-color: white;
+    text-decoration: none !important;
+}
+
+.form-container {
+  text-decoration: none !important;
+  width: 150px;
+  background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+@font-face {
+    font-family: "Muli-ExtraLightItalic";
+    src: url("fonts/Muli-ExtraLightItalic.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Muli-Reg';
+    src: url("fonts/Muli.ttf") format("truetype");
+}
+
+body {
+background-image: url(Images/20.jpg);
+    background-size: cover;
+    font-family = "Muli-Reg";
+    display: inline-block;
+}
+
+div.mainDiv{
+    display: inline-block;
+}
+
+
+div.TitleSyle{
+    font-family: "Muli-ExtraLightItalic";
+    font-size: 15px;
+    
+    color: antiquewhite;
+    width: 200px;
+    height: 200px;
+    position:fixed;
+    left:30%;
+    top: 15%;
+}
+
+div.BoxStyle{
+    
+    
+    display: block;
+    width: 350px;
+    height: auto;
+    
+
+    
+    
+    
+    font-family : "Muli-Reg";
+    margin-left: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 10px;
+    border-color: white;
+    border-style: dashed;
+    padding: 20px;
+    text-align: justify;
+    
+}
+
+div.team{
+    font-family : "Muli-Reg";
+    margin-left: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 10px;
+    border-color: white;
+    border-style: dashed;
+    padding: 20px;
+}
+
+div.collect{
+    position:fixed;
+    left:30%;
+    top: 30%;
+    display: flex;
+}
+
+
+
+
+div.titleDiv {
+    font-size: 100px;
+    font-family: "Muli-Reg";
+    text-shadow: 0 0 10px #FFFFFF, 0 0 5px #FFFFFF;
+    
+    margin-top:200px;
+    margin-left: 20px;
+    z-index: 100;
+    width: 100px;
+    font-weight:600;
+}
+
+.nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  font-family: "Muli-Reg";
+}
+
+.logo {
+  width: 130px;
+  height: 45px;
+}
+
+.nav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+
+
+
+
+
+div.footer{
+    
+    font-family: "Muli-ExtraLightItalic";
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 150px;
+    min-width: 100%;
+    
+    margin-top: 300px;
+    padding: 50px;
+    overflow:scroll;
+}
+
+div.footerC{
+    display:inline-grid;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    
+}
+
+div.col{
+    font-size: 14px;
+    display:flex;
+    position: inherit;
+    margin: 3px;
+    
+}
+
+div.brief{
+    font-family: "Muli-Reg";
+    text-align: justify;
+    border-right-color: solid;
+    border-right-style: dashed;
+    padding-right: 20px;
+    width: 250px;
+   font-weight: 400;
+    
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 12px;
+    height: 12px;
+  
+  text-decoration: none;
+  border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
