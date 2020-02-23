@@ -28,6 +28,8 @@ div.mainDiv{
     margin: 5px;
 }
 
+div:hover image{
+opacity: 0.7;}
 
 div.TitleSyle{
     font-family: "Muli-Reg";
@@ -114,23 +116,6 @@ div.HorizOrder{
 }
 
 
-
-
-
-
-.like-btn-svg {
-  width: 80px;
-  height: 80px;
-  background: url(https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png) no-repeat;
-  background-position: 0 0;
-  cursor: pointer;
-    display: inline-block;
-}
-
-input[type="checkbox"] {
-  display:none;
-}
-
 input:checked + .like-btn-svg{
   transition: background 1s steps(28);
   animation: fave-like-btn-svg 1s steps(28);
@@ -148,39 +133,3 @@ input:checked + .like-btn-svg{
 
 
 
-
-input.commentBox{
-    width: 500px;
-    height: 50px;
-    border-radius: 25px;
-    border-style: none;
-    text-decoration: none;
-    padding-left:15px;
-    font-size: 20px;
-}
-
-.ReaderAlign{
-    text-align: center;
-}
-
-table{
-    font-family :"Muli-Reg";
-}
-
-
-div.ReaderField{
-    padding-top: 20px;
-    border-top-color: green;
-    border-top-style: dashed;
-}
-
-.commentButton{
-    border-radius: 25px;
-    border-style: none;
-    text-decoration: none;
-    background-color: deepskyblue;
-    height: 50px;
-    width: 50px;
-    font-size: 20px;
-    
-}
