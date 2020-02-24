@@ -187,11 +187,13 @@ background-color: rgba(0, 0, 0, 0.0);
     src: url("fonts/Muli.ttf") format("truetype");
 }
 
-body {
-background-image: url(Images/20.jpg);
-    background-size: cover;
-    font-family = "Muli-Reg";
-    display: inline-block;
+
+body{
+    background-image: url(Images/20.jpg);
+    background-size:auto;
+        margin: 0px;
+
+    
 }
 
 div.mainDiv{
@@ -318,7 +320,8 @@ div.footer{
     height: 150px;
     min-width: 100%;
     
-    margin-top: 300px;
+    margin-top: 360px;
+    margin-top: 600px;
     padding: 50px;
     overflow:scroll;
 }
@@ -398,4 +401,3 @@ a{
     text-decoration: none;
     color: white;
 }
-
