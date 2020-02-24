@@ -297,9 +297,10 @@ a{
 
 
 img.artistImage{
-    height: 120px;
-    width: 120px;
-    border-radius: 50px;
+    height: 200px;
+    width: 200px;
+    border-radius: 12px;
+    
 }
 
 td.allArtistsTable{
@@ -310,8 +311,10 @@ td.allArtistsTable{
 }
 
 table.all{
-    margin-left: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 
@@ -327,6 +330,12 @@ div.mainDiv{
     height: auto;
     margin-left: 150px;
     margin-right: 100px;
-    margin-bottom: 60px;
+    
     margin-top: 50px;
+}
+
+p.cent{
+    text-align: center;
+    font-family: 'Muli-Reg';
+    color: cadetblue;
 }
