@@ -151,20 +151,24 @@ input:checked + .like-btn-svg{
   }
 }
 
-
+div.CommentArea{
+    padding: 20px;
+}
 
 
 input.commentBox{
     width: 500px;
-    height: 50px;
+    min-height: 50px;
+    height: auto;
     border-radius: 25px;
     border-style: none;
     text-decoration: none;
     padding-left:15px;
     font-size: 20px;
+    
 }
 
-.ReaderAlign{
+td.ReaderAlign{
     text-align: center;
 }
 
@@ -177,6 +181,9 @@ div.ReaderField{
     padding-top: 20px;
     border-top-color: green;
     border-top-style: dashed;
+    text-align: center;
+    
+    
 }
 
 .commentButton{
@@ -222,9 +229,8 @@ position:fixed;
 }
 
 .logo {
-  width: 100px;
-  height: 50px;
-    margin-left: 20px;
+  width: 130px;
+  height: 45px;
 }
 
 
@@ -474,4 +480,3 @@ div.brief{
 a{
     text-decoration: none;
 }
-

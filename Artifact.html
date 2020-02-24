@@ -9,15 +9,23 @@
         function SendComment(){
             
             
-            var table = document.getElementById("commentTable");
+            
+                var inputContent = document.getElementById("commentBox").value;
+            
+            if(inputContent != ""){
+                var table = document.getElementById("commentTable");
                 var row = table.insertRow(table.rows.length);
                 
-                var cell1 = row.insertCell(0); // Column #0
+                var cell1 = row.insertCell(0);
                 cell1.style.borderLeftStyle = "solid";
-            cell1.style.borderLeftColor = "blue";
+            cell1.style.borderLeftColor = "orange";
+            cell1.style.height = "auto";
+            cell1.style.width = "200px";
+            cell1.style.paddingBottom = "10px";
+            cell1.style.paddingLeft = "10px";
             cell1.innerHTML = "" + document.getElementById("commentTable").Value;
-            
-			    
+            cell1.innerHTML = inputContent;
+            }
 			    
         }
     </script>
@@ -181,15 +189,16 @@
         <!--end (it worked!!)-->
          
      
-       <div class="ReaderField">
+       <div class="CommentArea">
        
             
         <table style="width:100%" id="commentTable">
   
   <tr>
     <td>
+        
         Leave a comment</td>
-    <td width="5%">
+    <td width="1%">
     
       </td>
       <td  width="15%" class="ReaderField">
@@ -200,12 +209,12 @@
   <tr>
     <td>
         
-        <input type="text" id="comment" name="comment" class="commentBox">
+        <input type="text" id="commentBox" name="commentBox" class="commentBox">
             <input type="button" value="&rarr;" class="commentButton" onclick="SendComment()">
         
         </td>
       
-      <td width="10%"></td>
+      <td width="1%"></td>
       
     <td  width="15%"  class="ReaderField"> 
         

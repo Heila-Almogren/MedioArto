@@ -3,7 +3,7 @@
 
 <head>
   <title>MEDDIO ARTO</title>
-    <link rel ="stylesheet" type ="text-css" href="VisitorStyle.css">
+    <link rel ="stylesheet" type ="text-css" href="FavouriteList.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!--javascript of profile pop-up menu-->
@@ -15,6 +15,11 @@
         
         function closeForm() {
                 document.getElementById("myForm").style.display = "none";   }
+        
+        function Dislike(r){
+            var row = r.parentNode.parentNode;
+            row.parentNode.removeChild(row);
+        }
         
     </script>
     
@@ -88,61 +93,103 @@
     </div>
     <div class="favouriteList">
          
-        
-            <label><input type="checkbox" checked>
+       
+        <table>
+       <tr id="likeRow">
+           <td>
+                
+            <label><input  onchange="Dislike(this)" type="checkbox" checked>
   <div class="like-btn-svg"></div>
 </label>
         <div class="FavouriteItem">
             Item 1
         </div>
-        
-         <label><input type="checkbox" checked>
+           </td>
+       </tr>
+       <!--row-->
+       
+       <tr>
+           <td>
+                
+            <label><input  onchange="Dislike(this)" type="checkbox" checked>
   <div class="like-btn-svg"></div>
 </label>
         <div class="FavouriteItem">
             Item 2
         </div>
-         <label><input type="checkbox" checked>
+           </td>
+       </tr>
+       <!--row-->
+       
+       <tr>
+           <td>
+                
+            <label><input  onchange="Dislike(this)" type="checkbox" checked>
   <div class="like-btn-svg"></div>
 </label>
         <div class="FavouriteItem">
             Item 3
         </div>
-         
-        <label><input type="checkbox" checked>
+           </td>
+       </tr>
+       <!--row-->
+       
+       <tr>
+           <td>
+                
+            <label><input  onchange="Dislike(this)" type="checkbox" checked>
   <div class="like-btn-svg"></div>
 </label>
-        
         <div class="FavouriteItem">
             Item 4
         </div>
-        
-        
-        <label><input type="checkbox" checked>
+           </td>
+       </tr>
+       <!--row-->
+       
+       <tr>
+           <td>
+                
+            <label><input  onchange="Dislike(this)" type="checkbox" checked>
   <div class="like-btn-svg"></div>
 </label>
-        
         <div class="FavouriteItem">
             Item 5
         </div>
-        
-        
-        <label><input type="checkbox" checked>
+           </td>
+       </tr>
+       <!--row-->
+       
+       <tr>
+           <td>
+                
+            <label><input  onchange="Dislike(this)" type="checkbox" checked>
   <div class="like-btn-svg"></div>
 </label>
-        
         <div class="FavouriteItem">
             Item 6
         </div>
-        
-        
-        <label><input type="checkbox" checked>
+           </td>
+       </tr>
+       <!--row-->
+       
+       <tr>
+           <td>
+                
+            <label><input onchange="Dislike(this)" type="checkbox" checked>
   <div class="like-btn-svg"></div>
 </label>
-        
         <div class="FavouriteItem">
             Item 7
         </div>
+           </td>
+       </tr>
+       <!--row-->
+       
+       
+       
+    </table>
+         
         
         
     </div>
