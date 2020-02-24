@@ -39,7 +39,8 @@ div.TitleSyle{
     height: 80px;
     color: black;
     min-width: 100%;
-    
+        margin-top: 50px;
+
     border-bottom-color: dodgerblue;
     border-bottom-style: dashed;
 }
@@ -324,9 +325,8 @@ div.footer{
     background-color: rgba(0, 0, 0, 0.5);
     height: 150px;
     min-width: 100%;
-    
-    margin-top: 360px;
     margin-top: 300px;
+    margin-top: 200px;
     padding: 50px;
     overflow:scroll;
 }
@@ -404,8 +404,4 @@ div.brief{
 
 a{
     text-decoration: none;
-    color: white;
 }
-
-
-
