@@ -1,4 +1,11 @@
-
+@font-face {
+    font-family: "Muli-ExtraLightItalic";
+    src: url("fonts/Muli-ExtraLightItalic.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Muli-Reg';
+    src: url("fonts/Muli.ttf") format("truetype");
+}
 
 
 
@@ -15,11 +22,14 @@ body{
 
 
 div.titleDiv {
-    font-size: 80px;
+    font-size: 50px;
     font-family: "Muli-Reg";
-    text-shadow: 0 0 10px #FFFFFF, 0 0 5px #FFFFFF;
-    position: fixed;
-    top:50%;
+    
+    
+    margin-top:100px;
+    margin-left: 50px;
+    border-bottom-color: crimson;
+    border-bottom-style: dashed;
 }
 
 .nav {
@@ -33,9 +43,8 @@ position:fixed;
 }
 
 .logo {
-  width: 100px;
-  height: 50px;
-    margin-left: 20px;
+  width: 130px;
+  height: 45px;
 }
 
 
@@ -285,5 +294,41 @@ div.brief{
 
 a{
     text-decoration: none;
-    color: white;
+    
+}
+
+
+img.artistImage{
+    height: 120px;
+    width: 120px;
+    border-radius: 50px;
+}
+
+td.allArtistsTable{
+    text-align: center;
+     width : 200px;
+    height: 200px;
+    font-family: 'Muli-Reg';
+}
+
+table.all{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+
+div.mainDiv{
+    
+    
+    border-radius: 30px;
+    border-color: white;
+    border-style: dashed;
+    
+    border-width: medium;
+    width: auto;
+    height: auto;
+    margin-left: 150px;
+    margin-right: 100px;
+    margin-bottom: 60px;
+    margin-top: 50px;
 }
