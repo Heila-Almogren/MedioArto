@@ -24,12 +24,13 @@
 body{
     background-image: url(Images/20.jpg);
     background-size:auto;
-    
+    margin: 0 auto;
+    width:100%;
     
 }
 
 .content {
-  position: fixed;
+  
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
@@ -418,6 +419,12 @@ button.SearchButton:hover {
 		display: block;
 	}
 	
+
+div.gallery{
+    border-color: red;
+    border-style: solid;
+    margin-top: 1000px;
+}
 	.photo-album {
 		position: relative;
         
