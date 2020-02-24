@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Artist</title>
-    <link rel="stylesheet" type="text/css" href="ArtifactStyle.css">
+    <link rel="stylesheet" type="text/css" href="ArtistAddArtworkStyle.css">
     
 
    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,6 +15,44 @@
         
         function closeForm() {
                 document.getElementById("myForm").style.display = "none";   }
+        var x = 1;
+        function addStep(){
+               
+            
+            
+                var table = document.getElementById("stepsTable");
+                var row = table.insertRow(table.rows.length);
+                
+            var cell0 = row.insertCell(0);
+            
+            cell0.style.height = "30px";
+            cell0.style.width = "50px";
+            cell0.style.paddingBottom = "10px";
+            cell0.style.paddingLeft = "10px";
+            cell0.innerHTML = x++;
+            
+            
+            var cell1 = row.insertCell(1);
+            
+            cell1.style.height = "30px";
+            cell1.style.width = "200px";
+            cell1.style.paddingBottom = "10px";
+            cell1.style.paddingLeft = "10px";
+            
+            var step = document.createElement("input");
+			    step.type = "text";
+            step.style.padding = "10px";
+            step.style.height = "25px";
+            step.style.width = "270px";
+            step.style.borderStyle = "none";
+            step.style.borderRadius = "25px";
+			    cell1.appendChild(step);
+               
+            
+            
+            
+            
+        }
         
     </script> 
 </head>
@@ -66,7 +104,7 @@
     
     
          
-    <div class"HorizOrder">
+    <div class="HorizOrder">
          
          <div class="TitleSyle collect">
   
@@ -75,39 +113,44 @@ Add Artwork
     </div>
             
          
-         <div class="collect">
-        
-
-
-    
-    
-    
-         </div>
+         
         
         <!--mehh-->
-        <div class="collect">
+        
         
  
     <fieldset  class="ArtHow" >
         
-        <table style="width:100%">
+        <table>
  
-<div>
+
 <form action="/action_page.php">
-  <label for="title">Title:</label>
-  <input type="text" id="title" name="title"><br><br>
-  <label for="date">Date:</label>
-  <input type="text" id="date" name="date"><br><br>
-    <label for="description">Description:</label>
-  <input type="text" id="description" name="description"><br><br>
-  <form action="/action_page.php">
-  <label for="img">Select image:</label>
+  <label for="title">Title: &nbsp;</label>
+  <input type="text" id="title" name="title" class="in"><br><br>
+  <label for="date">Date: &nbsp;</label>
+  <input type="text" id="date" name="date" class="in"><br><br>
+    <label for="description">
+        <input type="button" value="+" class="addstep" onclick="addStep()">
+        
+         &nbsp; Steps:</label><br>
+
+  
+    
+    <table id="stepsTable">
+    <tr>
+        </tr>
+    
+    </table>
+    
+    
+  <label for="img">Select image:</label><br>
   <input type="file" id="img" name="img" accept="image/*">
   <!--باقي المكونات المستخدمة في العمل -->
     <input type="button" value="Submit"> <!--المفروض هنا تتغير البيانات اذا ضغط على الزر-->
-
 </form>
-</div>
+      
+
+
   
 	
   <!--باقي ماخلصت شغل هنا--> 
@@ -118,16 +161,22 @@ Add Artwork
     
     
     
-         </div>
+    
+         
         <!--end (it worked!!)-->
          
      
-       <div class="ReaderField">
+       
        
             
   
         
-    <div class="footer">
+  
+        </div>
+        
+        </div>
+   
+       <div class="footer">
     
     <div class="footerC brief">
         Medio Arto is a platform for eco-friendly art to share ideas of recycling items that usually reside in the recycling bin.. go and share yours now!
@@ -174,7 +223,5 @@ Add Artwork
         
         
         </div>
-   
-     
 </body>
 </html>
