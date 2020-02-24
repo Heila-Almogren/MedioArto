@@ -681,9 +681,7 @@ div.footer{
     background-color: rgba(0, 0, 0, 0.5);
     height: 150px;
     min-width: 100%;
-    
-    margin-top: 155px;
-    
+    margin-top: 70px;
     padding: 50px;
     overflow:scroll;
 }
@@ -788,7 +786,6 @@ table.all{
 
 div.mainDiv{
     
-    
     border-radius: 30px;
     border-color: white;
     border-style: dashed;
@@ -803,7 +800,8 @@ div.mainDiv{
 }
 
 p.cent{
-    text-align: center;
+    margin-left: 700px;
+    font-size: 20px;
     font-family: 'Muli-Reg';
-    color: cadetblue;
+    color: white;
 }
