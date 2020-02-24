@@ -127,6 +127,8 @@ background-color: rgba(0, 0, 0, 0.0);
     font-family: "Muli-Reg";
     font-size: 12px;
     padding: 7px;
+    
+    
 }
 
 .ProfileTitle{
@@ -329,4 +331,12 @@ div.mainDiv{
     margin-right: 100px;
     margin-bottom: 60px;
     margin-top: 50px;
+}
+
+
+.bio{
+        margin-left: 50px;
+    margin-right: 20px;
+    font-family: 'Muli-Reg';
+
 }
