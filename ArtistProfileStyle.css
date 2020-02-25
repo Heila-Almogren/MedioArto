@@ -26,7 +26,7 @@ div.titleDiv {
     font-family: "Muli-Reg";
     
     
-    margin-top:100px;
+    margin-top:50px;
     margin-left: 50px;
     border-bottom-color: crimson;
     border-bottom-style: dashed;
@@ -216,7 +216,7 @@ div.footer{
     min-width: 100%;
     
     margin-top: 300px;
-    margin-top: 200px;
+    margin-top: 100px;
     padding: 50px;
     overflow:scroll;
 }
