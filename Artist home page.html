@@ -1,0 +1,365 @@
+      
+    
+      <!DOCTYPE html>
+<html>
+
+<head>
+  <title>MEDDIO ARTO</title>
+    <link rel ="stylesheet" type ="text-css" href="VisitorStyle.css">
+    
+    <!--javascript of profile pop-up menu-->
+    <script>
+        function openForm() {
+            
+            var viewButton = document.getElementById("myForm");
+                viewButton.style.display = "block"; }
+        
+        function closeForm() {
+                document.getElementById("myForm").style.display = "none";   }
+        
+    </script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+
+    
+       
+     <!--Navigation bar-->
+<div class="nav">
+  
+    <a class="active" onclick="openForm()">
+            <img src="Images/Neutral-placeholder-profile.jpg" class="userProfileIcon"></a>
+
+    
+    <a href="about-artist.html"><p class="menuText">About</p></a>
+   
+    <a href="ArtistAddArtwork.html"><p class="menuText">Add Artwork</p></a>
+        <a href="Artist home page.html"><p class="menuText">Home</p></a>
+
+            <img href="MedioArto.html" src="Images/Leaves.png" alt="logo" class="logo">
+</div>
+    
+    
+      
+      
+      
+   <!--pop-up menu of profile image-->
+   
+<div class="form-popup" id="myForm">
+  <form class="form-container">
+      
+      <p class ="ProfileTitle">
+      Hello, Sara! <button class="closeButton" type="submit" onclick="closeForm()">&times;</button></p>
+      
+      
+      
+      
+      
+      <a href="ArtistEditArtwork.html">
+      <div class="ProfileOption">
+     &#128396;&nbsp; Manage Artworks
+      </div></a>
+      
+      
+      
+      <a href="MedioArto.html">
+      <div class="ProfileOption">
+      &#x1f511; &nbsp; Logout
+      </div></a>
+    
+  </form>
+</div>
+    
+    
+    
+    
+    
+    
+    <!--side menu-->
+    
+    <div class="SideMenu" id="SideMenu" onclick="moveMenu()">
+        <form>
+        
+    <p class="SideMenuTitle">What's in your recycle bin?
+        
+        <p>
+<div class="MenuElements">
+    
+    <table>
+    <tr>
+        <td>
+            
+        </td>
+        </tr>
+    <!--row-->
+    <tr>
+        <td>
+            <label class="container">Plastic Bags
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+        </td>
+        </tr>
+    <!--row--><tr>
+        <td>
+            <label class="container">colored paper
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+        </td>
+        </tr>
+    <!--row--><tr>
+        <td>
+            
+<label class="container">wood frames
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+        </td>
+        </tr>
+    <!--row--><tr>
+        <td>
+            <label class="container">Used Fabrics
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+        </td>
+        </tr>
+    <!--row--><tr>
+        <td>
+            <label class="container">Terapak Cartons
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+        </td>
+        </tr>
+    <!--row--><tr>
+        <td>
+              
+        <label class="container">Hair ties
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+        </td>
+        </tr>
+    <!--row--><tr>
+        <td>
+                <label class="container">Newspaper
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+    
+        </td>
+        </tr>
+    <!--row--><tr>
+        <td>
+             <label class="container">Cardboards
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+        </td>
+        </tr>
+    <!--row--><tr>
+        <td>
+              
+    <label class="container">Pizza Box
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+    
+        </td>
+        </tr>
+    <!--row--><tr>
+        <td>
+               <label class="container">Aluminum Foil
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+        </td>
+        </tr>
+    <!--row--><tr>
+        <td>
+               <label class="container">Cloth Hangers
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+        </td>
+        </tr>
+    <!--row--><tr>
+        <td>
+                <label class="container">Sterofoam Cups
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+        </td>
+        </tr>
+    <!--row--><tr>
+        <td>
+              <label class="container">CD's
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+        </td>
+        </tr>
+    <!--row--><tr>
+        <td>
+                <label class="container">Leather
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+        </td>
+        </tr>
+    <!--row-->
+    </table>
+    
+    
+    
+    
+
+    
+        
+
+
+
+
+
+    
+    
+  
+    
+
+   
+    
+  
+    
+ 
+    
+    
+ 
+    
+
+    
+  
+    
+
+    
+    
+    </div>
+        
+        
+        <p>
+    <button class= "SearchButton" type="submit" formaction="SearchResult.html">Search</button>
+        &nbsp;
+    <button class= "SearchButton" type="reset">Reset</button>
+    
+    </p>
+        </form>
+    </div>
+    
+    
+    <div class="mainTitleDiv">
+    Hey, Let's do something arty!
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!--gallery-->
+    
+   
+    <div class="photo-album">
+		
+		
+		
+		<a href="Artifact.html" class="large polaroid img1"><img src="Images/ArtWorks/plastic-bottles-recycling-ideas-21.jpg" alt="">accessories hanger from plastic bottles</a>
+		<a href="Artifact.html" class="polaroid img2"><img src="Images/ArtWorks/49354186106d876645c4e481cd0d4456.jpg" alt="">Creative stationary holder made from old newspapers</a>
+		<a href="http://www.flickr.com/photos/nataliedowne/2254704566/in/set-72157604232220981/" class="small polaroid img3"><img src="Images/ArtWorks/b0870903479cc96cc4e4900d7c0f5a9a.jpg" alt="">Beautiful Lampshades made from old CD's</a>
+		
+		
+		
+        
+        <a href="Artifact.html" class="medium polaroid img4"><img src="Images/ArtWorks/plastic-bottle-art-30.jpg" alt="">Sweet bags from plastic bottles</a>
+        
+        
+		<a href="Artifact.html" class="polaroid img5"><img src="Images/ArtWorks/531c011abf3a6a034edb22e4e9a947a5.jpg" alt="">Cute photoframe made from an old keyboard</a>
+		
+		
+		<a href="Artifact.html/" class="polaroid img6"><img src="Images/ArtWorks/recycling-ideas-home-decor.jpg" alt="">furniture from carton!</a>
+		
+		<a href="Artifact.html" class="polaroid img7"><img src="Images/ArtWorks/recycle-creative-lamai-tote-bag.jpg_16.jpg" alt="">lovely colorful bag made from used material</a>
+		<a href="Artifact.html" class="small polaroid img8"><img src="Images/ArtWorks/diy-lamp-from-bottle-caps.jpg" alt="">Roof decor made from bottle caps</a>
+		<a href="Artifact.html" class="medium polaroid img9"><img src="Images/ArtWorks/221097_mn66com.gif" alt="">Sweet flower ring made from egg cartoon</a>
+		<a href="Artifact.html" class="polaroid img10"><img src="Images/ArtWorks/decorative painted bottle ideas3 (6).jpg" alt="">Cute artistic Bottles</a>
+		<a href="Artifact.html" class="small polaroid img11"><img src="Images/ArtWorks/f1d97862783760aa08c7847204df0940.jpg" alt="">A unique spotlight made from old glass</a>
+		<a href="Artifact.html" class="small polaroid img12"><img src="Images/ArtWorks/bottle-cap-clock.jpg" alt="">A tiny clock made from bottles caps</a>
+		<a href="Artifact.html" class="small polaroid img13"><img src="Images/ArtWorks/bottle-cap-brush-holder.jpg" alt="">Creative toothbrush hangers</a>
+		<a href="Artifact.html" class="small polaroid img14"><img src="Images/ArtWorks/6-tin-can-felt-monsters.jpg" alt="">Funny containers</a>
+		<a href="Artifact.html" class="polaroid img15"><img src="Images/ArtWorks/226695.jpeg" alt="">Unique necklace made from nature</a>
+
+	</div>
+    
+     
+   
+    <div class="footer">
+    
+    <div class="footerC brief">
+        Medio Arto is a platform for eco-friendly art to share ideas of recycling items that usually reside in the recycling bin.. go and share yours now!
+        </div>
+        
+        <div class="footerC">
+        Contact Us:
+        <div class=" footerC col">
+        email: &nbsp;
+        <a href="mailto:info@medioarto.com">info@medioarto.com</a> </div>
+        <div class=" footerC col">
+        tel: +966563636787</div>
+        
+        
+        <div class=" footerC col">
+        Address:</div>
+        
+        
+        <div class=" footerC col">
+        11314 Riyadh, Saudi Arabia</div>
+        </div>
+        
+        <div class="footerC">
+        Find Us on Social Media!
+        
+        
+        <div class=" footerC col">
+        <div class=" footerC col">
+        <a href="#" class="fa fa-twitter"></a>
+            &nbsp;
+        <a href="#" class="fa fa-facebook"></a> 
+            &nbsp;
+        <a href="#" class="fa fa-youtube"></a>     &nbsp;
+        <a href="#" class="fa fa-instagram"></a> 
+            </div>
+            
+            </div>
+        
+        
+        </div>
+        
+        
+        
+        
+        
+        </div>
+        
+</body>
+</html>
+    
+
+    
