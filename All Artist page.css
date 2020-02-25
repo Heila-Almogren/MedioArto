@@ -328,5 +328,11 @@ div.mainDiv{
     margin-left: 150px;
     margin-right: 100px;
     margin-bottom: 60px;
-    margin-top: 50px;
+    margin-top: 70px;
+}
+
+p.cent{
+    text-align: center;
+    font-family: 'Muli-Reg';
+    color: cadetblue;
 }
