@@ -498,3 +498,13 @@ input.addstep{
     background-color: white;
 }
 
+
+
+button.sub{
+        width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    border-style: none;
+    background-color: white;
+    color: black;
+}

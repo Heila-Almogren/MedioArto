@@ -766,13 +766,23 @@ a{
     font-family: "Muli-Reg";
 }
 
-button.approval{
+.approval{
     height: 25px;
     border-style: none;
     background-color: rgba(0, 0, 0, 0.0);
 }
 
+.approval:checked{
+    height: 25px;
+    border-style: none;
+    background-color: rgba(0, 0, 0, 1);
+}
+
 .icon{
     height: 20px;
     width: 20px;
+}
+
+div.options{
+    display: inline-block;
 }
