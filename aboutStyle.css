@@ -49,6 +49,16 @@ div.BoxStyle{
     
 }
 
+
+
+.userProfileIcon{
+      width: 40px;
+  height: 40px;
+    border-radius: 50%;
+    margin:7px;
+    
+}
+
 div.team{
     font-family : "Muli-Reg";
     margin-left: 20px;
@@ -98,6 +108,28 @@ div.titleDiv {
   height: 45px;
 }
 
+.menuText{
+     margin: 14px 16px;
+    color: white;
+    
+}
+
+.nav
+.nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  font-family: "Muli-Reg";
+}
+
+.logo {
+  width: 130px;
+  height: 45px;
+}
+
 .nav a {
   float: right;
   color: #f2f2f2;
@@ -115,6 +147,120 @@ div.titleDiv {
 .nav a.active {
   background-color: #4CAF50;
   color: white;
+}
+
+
+
+
+
+
+
+
+{box-sizing: border-box;}
+
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+.closeButton{
+    
+    width: 20px;
+    height: 20px;
+    float:right;
+    clear:right;
+    border:none;
+    margin-right: 10px;
+    border-radius: 50%;
+    border-color: white;
+    background-color:whitesmoke;
+    font-size: 10px;
+    color: darkgray;
+    
+    
+}
+
+
+.ProfileOption{
+    font-family: "Muli-Reg";
+    font-size: 12px;
+    padding: 7px;
+    
+    
+}
+
+.ProfileTitle{
+    font-family: "Muli-Reg";
+    margin-left: 10px;
+}
+
+.ProfileOption:hover{
+    font-size: 15px;
+        background-color:rgba(201, 201, 201, 0.1);
+    text-decoration: none !important;
+
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 50px;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+    background-color: white;
+    text-decoration: none !important;
+}
+
+.form-container {
+  text-decoration: none !important;
+  width: 150px;
+  background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
 }
 
 
@@ -212,6 +358,6 @@ div.brief{
 
 a{
     text-decoration: none;
-    color: white;
+    
 }
 
