@@ -480,3 +480,12 @@ div.brief{
 a{
     text-decoration: none;
 }
+
+text.author{
+    
+    font-size: 20px;
+}
+
+div.horizSpan{
+    display: flex;
+}
