@@ -23,7 +23,7 @@ div.mainDiv{
     margin-top: 80px;
     display: inline-block;
     border-radius: 30px;
-    border-color: orange;
+    border-color: midnightblue;
     border-style: dashed;
     padding: 20px;
     border-width: medium;
@@ -38,10 +38,9 @@ div.TitleSyle{
     font-family: "Muli-Reg";
     font-size: 40px;
     height: 80px;
-    color: black;
-    min-width: 100%;
-    
-    border-bottom-color: dodgerblue;
+    color: midnightblue;
+    min-width: 80%;
+    border-bottom-color: midnightblue;
     border-bottom-style: dashed;
 }
 
@@ -55,7 +54,7 @@ div.ArtImg{
     margin-left: 20px;
    border-radius: 50%;
     
-    border-color: white;
+    border-color: midnightblue;
     border-style: dashed;
     padding: 20px;
 }
@@ -67,12 +66,13 @@ div.ArtImg{
     border-bottom-right-radius: 10px;
     border-top-right-radius: 30px;
     border-top-left-radius: 10px;
-    border-color: white;
+    border-color: midnightblue;
     border-style: dashed;
     padding: 20px;
     border-width: medium;
     height: auto;
     width: 250px;
+    color: midnightblue ;
 }
 
 
@@ -83,12 +83,13 @@ div.ArtImg{
     border-bottom-right-radius: 10px;
     border-top-right-radius: 30px;
     border-top-left-radius: 10px;
-    border-color: white;
+    border-color: midnightblue;
     border-style: dashed;
     padding: 20px;
     border-width: medium;
     height: auto;
     width: auto;
+    color: midnightblue ;
 }
 
 div.collect{
@@ -110,12 +111,14 @@ img{
 
 div.HorizOrder{
     display: inline-block;
+    
 }
 
 .num{
     font-family: "Muli-Reg";
     font-size: 30px;
     font-weight: 600;
+    
 }
 
 
@@ -174,15 +177,16 @@ td.ReaderAlign{
 
 table{
     font-family :"Muli-Reg";
+    color: midnightblue
 }
 
 
 div.ReaderField{
     padding-top: 20px;
-    border-top-color: green;
+    border-top-color: midnightblue;
     border-top-style: dashed;
     text-align: center;
-    
+    color: midnightblue ;
     
 }
 

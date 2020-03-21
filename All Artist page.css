@@ -24,11 +24,11 @@ body{
 div.titleDiv {
     font-size: 50px;
     font-family: "Muli-Reg";
-    
+    color: midnightblue ;
     
     margin-top:50px;
     margin-left: 50px;
-    border-bottom-color: crimson;
+    border-bottom-color: midnightblue;
     border-bottom-style: dashed;
 }
 
@@ -127,6 +127,7 @@ background-color: rgba(0, 0, 0, 0.0);
     font-family: "Muli-Reg";
     font-size: 12px;
     padding: 7px;
+    color: black ;
 }
 
 .ProfileTitle{
@@ -135,6 +136,7 @@ background-color: rgba(0, 0, 0, 0.0);
 }
 
 .ProfileOption:hover{
+    color: black ;
     font-size: 15px;
         background-color:rgba(201, 201, 201, 0.1);
     text-decoration: none !important;
@@ -307,6 +309,7 @@ td.allArtistsTable{
      width : 200px;
     height: 200px;
     font-family: 'Muli-Reg';
+    color: midnightblue
 }
 
 table.all{
@@ -319,7 +322,7 @@ div.mainDiv{
     
     
     border-radius: 30px;
-    border-color: white;
+    border-color: midnightblue;
     border-style: dashed;
     
     border-width: medium;
@@ -334,5 +337,5 @@ div.mainDiv{
 p.cent{
     text-align: center;
     font-family: 'Muli-Reg';
-    color: cadetblue;
+    color: midnightblue;
 }
