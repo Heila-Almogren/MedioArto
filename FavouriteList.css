@@ -587,7 +587,7 @@ position: relative;
     width: 300px;
     height: 300px;
     overflow: scroll;
-    border-color: black;
+    border-color: midnightblue;
     border-radius: 20px;
     border-style: dashed;
 }
@@ -595,7 +595,7 @@ position: relative;
 div.FavouriteListTitle {
     position: absolute;
     font-size: 70px;
-    color: white;
+    color: midnightblue;
     font-family: "HappySweetyDemoRegular";
     min-height: 200px;
     width: 100px;
@@ -634,6 +634,7 @@ input:checked + .like-btn-svg{
 
 
 div.FavouriteItem{
+    color: midnightblue ;
 vertical-align: middle;
   margin-top: -90px;
   display: inline-block;
