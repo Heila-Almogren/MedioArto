@@ -52,6 +52,7 @@ position:fixed;
   height: 45px;
 }
 
+}
 
 .userProfileIcon{
       width: 40px;
@@ -132,13 +133,16 @@ background-color: rgba(0, 0, 0, 0.0);
     font-family: "Muli-Reg";
     font-size: 12px;
     padding: 7px;
-    
+    color: black
     
 }
+
 
 .ProfileTitle{
     font-family: "Muli-Reg";
     margin-left: 10px;
+        color: black
+
 }
 
 .ProfileOption:hover{
@@ -681,7 +685,10 @@ div.footer{
     background-color: rgba(0, 0, 0, 0.5);
     height: 150px;
     min-width: 100%;
-    margin-top: 200px;
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
     padding: 50px;
     overflow:scroll;
 }
@@ -692,7 +699,8 @@ div.footerC{
     margin-top: 20px;
     margin-left: 40px;
     margin-right: 40px;
-    
+        color: white
+
 }
 
 div.col{
