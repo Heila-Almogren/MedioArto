@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "Muli-ExtraLightItalic";
+    src: url("Fonts/Muli-ExtraLightItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Muli-Reg";
+    src: url("Fonts/Muli.ttf") format("truetype");
+}
+@font-face {
+    font-family: "flores";
+    src: url("Fonts/flores-font/FloresDemo-nRAjO.ttf") format("truetype");
+}
+
+
+
+div.footer{
+    
+    font-family: "Muli-ExtraLightItalic";
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 160px;
+    min-width: 100%;
+    
+    position:relative;
+    margin-bottom: 0px;
+    
+    
+    padding: 50px;
+    overflow:hidden;
+}
+
+div.footerC{
+    display:inline-grid;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    
+}
+
+div.col{
+    font-size: 14px;
+    display:flex;
+    position: inherit;
+    margin: 3px;
+    
+}
+
+div.brief{
+    font-family: "Muli-Reg";
+    text-align: justify;
+    border-right-color: solid;
+    border-right-style: dashed;
+    padding-right: 20px;
+    width: 250px;
+   font-weight: 400;
+    
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 12px;
+    height: 12px;
+  
+  text-decoration: none;
+  border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}

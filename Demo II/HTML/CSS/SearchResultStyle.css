@@ -1,0 +1,129 @@
+
+
+
+@font-face {
+    font-family: "Muli-ExtraLightItalic";
+    src: url("Fonts/Muli-ExtraLightItalic.ttf") format("truetype");
+}
+
+
+
+@font-face {
+    font-family: "HappySweetyDemoRegular";
+    src: url("Fonts/HappySweetyDemoRegular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Muli-Reg";
+    src: url("Fonts/Muli.ttf") format("truetype");
+}
+
+
+html{
+    width:100%;
+    overflow-x: hidden !important;
+}
+
+body{
+    background-color: white;
+    background-size:auto;
+    margin: 0 auto;
+    
+    width:100%;
+overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+
+#MenuBar {
+  background-color: rgba(255,70, 0, 0.8);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: "Muli-Reg";
+    z-index: 100;
+}
+
+.logo {
+  width: 130px;
+  height: 45px;
+}
+
+.userProfileIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 7px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.menuText {
+  margin: 14px 16px;
+  color: white;
+}
+
+#MenuBar a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  height: 50px;
+
+  font-size: 17px;
+}
+
+
+#MenuBar a:hover {
+  background-color: rgba(255,70, 0, 0.5);
+  color: black;
+}
+
+MenuBar a.active:hover {
+background-color: rgba(255,70, 0, 0.8);
+}
+
+MenuBar a.active {
+  background-color: rgba(0, 0, 0, 0.0);
+  color: white;
+}
+
+  {
+  box-sizing: border-box;
+}
+
+.ProfileOption {
+  font-family: "Muli-Reg";
+  font-size: 12px;
+  padding: 7px;
+}
+
+.ProfileTitle {
+  font-family: "Muli-Reg";
+  margin-left: 10px;
+}
+
+.ProfileOption:hover {
+  font-size: 15px;
+  background-color: rgba(201, 201, 201, 0.2);
+  text-decoration: none !important;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 45px;
+  right: 15px;
+  border-radius: 10px;
+  z-index: 200;
+  background-color: #f1f1f1;
+  text-decoration: none !important;
+    width: 150px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,648 @@
+@font-face {
+    font-family: "Muli-ExtraLightItalic";
+    src: url("fonts/Muli-ExtraLightItalic.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Muli-Reg';
+    src: url("fonts/Muli.ttf") format("truetype");
+}
+
+html{
+    width:100%;
+    overflow-x: hidden !important;
+}
+
+body{
+    background-color: #ffcc00;
+    background-size:auto;
+    margin: 0 auto;
+    
+    width:100%;
+overflow-x: hidden;
+}
+
+
+
+
+div.mainDiv{
+    margin-top: 80px;
+    display: inline-block;
+    border-radius: 30px;
+    border-color: orange;
+    border-style: dashed;
+    padding: 20px;
+    border-width: medium;
+    min-width: 90%;
+    
+}
+
+
+div.TitleSyle{
+    font-family: "Muli-Reg";
+    font-size: 40px;
+    height: 80px;
+    color: black;
+    min-width: 100%;
+    
+    border-bottom-color: dodgerblue;
+    border-bottom-style: dashed;
+}
+
+div.ArtImg{
+    
+    
+    display: block;
+    width: 250px;
+    height: 250px;
+
+    margin-left: 20px;
+   border-radius: 50%;
+    
+    border-color: white;
+    border-style: dashed;
+    padding: 20px;
+}
+
+.ArtDes{
+    font-family : "Muli-Reg";
+    margin-left: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 10px;
+    border-color: white;
+    border-style: dashed;
+    padding: 20px;
+    border-width: medium;
+    height: auto;
+    width: 250px;
+}
+
+
+.ArtHow{
+    font-family : "Muli-Reg";
+    margin-left: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 10px;
+    border-color: white;
+    border-style: dashed;
+    padding: 20px;
+    border-width: medium;
+    height: auto;
+    width: auto;
+}
+
+div.collect{
+    position:relative;
+    margin-left:10%;
+    margin-bottom: 5%;
+    display: flex;
+}
+
+
+img{
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    
+}
+
+
+div.HorizOrder{
+    display: inline-block;
+}
+
+.num{
+    font-family: "Muli-Reg";
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+
+
+
+input[type="checkbox"] {
+  display:none;
+    
+}
+
+input:checked + .like-btn-svg{
+  transition: background 1s steps(28);
+  animation: fave-like-btn-svg 1s steps(28);
+  background-position: -2800px 0;
+}
+
+@keyframes fave-like-btn-svg {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2800px 0;
+  }
+}
+
+div.CommentArea{
+    padding: 20px;
+}
+
+
+input.commentBox{
+    width: 410px;
+    min-height: 70px;
+    height: auto;
+    border-radius: 30px;
+    border: solid orange;
+    text-decoration: none;
+    padding-left:15px;
+    font-size: 20px;
+    
+}
+
+td.ReaderAlign{
+    text-align: center;
+}
+
+table{
+    font-family :"Muli-Reg";
+}
+
+
+div.ReaderField{
+    padding-top: 20px;
+    border-top-color: green;
+    border-top-style: dashed;
+    text-align: center;
+    
+    
+}
+
+.commentButton{
+    border-radius: 25px;
+    border-style: none;
+    text-decoration: none;
+    background-color: deepskyblue;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    
+}
+
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+
+div.titleDiv {
+    font-size: 80px;
+    font-family: "Muli-Reg";
+    text-shadow: 0 0 10px #FFFFFF, 0 0 5px #FFFFFF;
+    position: fixed;
+    top:50%;
+}
+
+.nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    font-family: "Muli-Reg";
+}
+
+.logo {
+  width: 130px;
+  height: 45px;
+}
+
+
+.userProfileIcon{
+      width: 40px;
+  height: 40px;
+    border-radius: 50%;
+    margin:7px;
+    
+}
+
+.menuText{
+     margin: 14px 16px;
+    color: white;
+    
+}
+
+
+
+.nav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  height: 50px;
+  
+  font-size: 17px;
+    
+}
+
+
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+    
+}
+
+.nav a.active {
+background-color: rgba(0, 0, 0, 0.0);
+    color: white;
+    
+    
+    
+}
+
+{box-sizing: border-box;}
+
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+.closeButton{
+    
+    width: 20px;
+    height: 20px;
+    float:right;
+    clear:right;
+    border:none;
+    margin-right: 10px;
+    border-radius: 50%;
+    border-color: white;
+    background-color:whitesmoke;
+    font-size: 10px;
+    color: darkgray;
+    
+    
+}
+
+
+.ProfileOption{
+    font-family: "Muli-Reg";
+    font-size: 12px;
+    padding: 7px;
+    
+    
+}
+
+.ProfileTitle{
+    font-family: "Muli-Reg";
+    margin-left: 10px;
+}
+
+.ProfileOption:hover{
+    font-size: 15px;
+        background-color:rgba(201, 201, 201, 0.1);
+    text-decoration: none !important;
+
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 50px;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+    background-color: white;
+    text-decoration: none !important;
+}
+
+.form-container {
+  text-decoration: none !important;
+  width: 150px;
+  background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+div.footer{
+    
+    font-family: "Muli-ExtraLightItalic";
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 150px;
+    min-width: 100%;
+    
+    margin-top: auto;
+    padding: 50px;
+    overflow:scroll;
+}
+
+div.footerC{
+    display:inline-grid;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    
+}
+
+div.col{
+    font-size: 14px;
+    display:flex;
+    position: inherit;
+    margin: 3px;
+    
+}
+
+div.brief{
+    font-family: "Muli-Reg";
+    text-align: justify;
+    border-right-color: solid;
+    border-right-style: dashed;
+    padding-right: 20px;
+    width: 250px;
+   font-weight: 400;
+    
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 12px;
+    height: 12px;
+  
+  text-decoration: none;
+  border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+text.author{
+    
+    font-size: 20px;
+}
+
+div.horizSpan{
+    display: flex;
+}
+
+
+
+
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+    
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: yellowgreen;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.container {    /*keep*/
+    
+  display: block;
+  position: relative;
+  padding-left: 35px;
+        margin-left: 30px;
+    
+    margin-bottom: 12px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+   
+}
+
+
+.speech-bubble {
+	position: relative;
+	background: #ffffff;
+	border-radius:  30px;
+    z-index: 0;
+}
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 60%;
+	width: 0;
+	height: 0px;
+	border: 10px solid transparent;
+	border-right-color: #ffffff;
+	border-left: 0;
+	margin-top: -25px;
+	margin-left: -7px;
+}
+
+::-webkit-input-placeholder{
+    color: lightgrey;
+    font-family: 'Muli-Reg';
+    font-size: 15px;
+    
+}
+
+
+
+
+.tooltip {
+  position: relative;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: help;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 220px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -100px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+
+[id='toggle-heart'] {
+  position: absolute;
+  left: -100vw;
+}
+[id='toggle-heart']:checked + label {
+  color: #e2264d;
+}
+
+[for='toggle-heart'] {
+  align-self: center;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+}

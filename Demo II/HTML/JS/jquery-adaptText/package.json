@@ -1,0 +1,116 @@
+{
+  "name": "jquery-adaptText",
+  "title": "jQuery AdaptText",
+  "description": "A jQuery plugin that help rescale text depending on it's container width.",
+  "version": "1.3.4",
+  "homepage": "https://github.com/amazingSurge/jquery-adaptText",
+  "author": {
+    "name": "amazingSurge",
+    "email": "amazingSurge@gmail.com",
+    "url": "amazingSurge.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:amazingSurge/jquery-adaptText.git"
+  },
+  "keywords": [
+    "jquery",
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "ui",
+    "es6"
+  ],
+  "bugs": "https://github.com/amazingSurge/jquery-adaptTextadaptText/issues",
+  "licenses": [
+    {
+      "type": "LGPL-3.0",
+      "url": "https://github.com/amazingSurge/jquery-adaptText/blob/master/LICENSE"
+    }
+  ],
+  "license": "LGPL-3.0",
+  "main": "dist/jquery-adaptText.js",
+  "module": "dist/jquery-adaptText.es.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "prestart": "npm install",
+    "start": "gulp serve",
+    "build": "npm run prestart && gulp build",
+    "deploy": "gulp deploy",
+    "deploy:prepare": "gulp deploy:prepare",
+    "release": "gulp release",
+    "test": "gulp test"
+  },
+  "devDependencies": {
+    "yargs": "*",
+    "assets-manager": "*",
+    "babel-core": "*",
+    "babel-eslint": "*",
+    "babel-istanbul": "*",
+    "babel-plugin-transform-es2015-modules-umd": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-es2015-rollup": "*",
+    "babelrc-rollup": "*",
+    "browser-sync": "*",
+    "chai": "*",
+    "del": "*",
+    "prettier": "*",
+    "gulp-nf-prettier": "*",
+    "graceful-fs": "*",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "*",
+    "gulp-babel": "*",
+    "gulp-changed": "*",
+    "gulp-eslint": "*",
+    "gulp-extname": "*",
+    "gulp-filter": "*",
+    "gulp-header": "*",
+    "gulp-iconfont-css": "*",
+    "gulp-if": "*",
+    "gulp-notify": "*",
+    "gulp-plumber": "*",
+    "gulp-rename": "*",
+    "gulp-replace": "*",
+    "gulp-rollup": "*",
+    "gulp-size": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "*",
+    "gulp-zip": "*",
+    "inquirer": "*",
+    "semver": "*",
+    "karma": "*",
+    "karma-babel-preprocessor": "*",
+    "karma-chrome-launcher": "*",
+    "karma-commonjs": "*",
+    "karma-coverage": "*",
+    "karma-firefox-launcher": "*",
+    "karma-mocha": "*",
+    "karma-mocha-reporter": "*",
+    "karma-phantomjs-launcher": "*",
+    "karma-rollup-plugin": "*",
+    "karma-sinon-chai": "*",
+    "merge-stream": "*",
+    "mkdirp": "*",
+    "mocha": "*",
+    "node-notifier": "*",
+    "normalize.css": "^7.0.0",
+    "path-exists": "*",
+    "phantomjs-prebuilt": "*",
+    "release-it": "*",
+    "rollup-plugin-babel": "*",
+    "rollup-plugin-istanbul": "*",
+    "sinon": "*",
+    "sinon-chai": "*",
+    "through2": "*"
+  },
+  "engines": {
+    "node": ">= 6.2.2",
+    "npm": ">= 3"
+  },
+  "dependencies": {
+    "jquery": ">=2.2.0"
+  }
+}

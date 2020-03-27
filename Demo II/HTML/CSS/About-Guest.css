@@ -1,0 +1,166 @@
+
+
+
+@font-face {
+    font-family: "Muli-ExtraLightItalic";
+    src: url("Fonts/Muli-ExtraLightItalic.ttf") format("truetype");
+}
+
+
+
+@font-face {
+    font-family: "HappySweetyDemoRegular";
+    src: url("Fonts/HappySweetyDemoRegular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Muli-Reg";
+    src: url("Fonts/Muli.ttf") format("truetype");
+}
+
+.MenuBar {
+  background-color: rgba(255,70, 0, 0.8);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: "Muli-Reg";
+    z-index: 100;
+}
+
+.logo {
+  width: 130px;
+  height: 45px;
+}
+
+.userProfileIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 7px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.menuText {
+  margin: 14px 16px;
+  color: white;
+}
+
+
+.MenuBar a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  height: 50px;
+
+  font-size: 17px;
+}
+
+
+.MenuBar a:hover {
+  background-color: rgba(255,70, 0, 0.5);
+  color: black;
+    
+}
+
+.MenuBar a.active {
+  color: white;
+  background-color: rgba(255,77, 0, 0.9);
+
+}
+
+.MenuBar a.active:hover {
+background-color: rgba(255,70, 0, 1);
+    cursor:default;
+}
+
+
+
+  {
+  box-sizing: border-box;
+}
+
+.ProfileOption {
+  font-family: "Muli-Reg";
+  font-size: 12px;
+  padding: 7px;
+}
+
+.ProfileTitle {
+  font-family: "Muli-Reg";
+  margin-left: 10px;
+}
+
+.ProfileOption:hover {
+  font-size: 15px;
+  background-color: rgba(201, 201, 201, 0.2);
+  text-decoration: none !important;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 45px;
+  right: 15px;
+  border-radius: 10px;
+  z-index: 200;
+  background-color: #f1f1f1;
+  text-decoration: none !important;
+    width: 150px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.team{
+    margin:100px;
+    display: inline-block;
+}
+
+
+/* Style all font awesome icons */
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 12px;
+    height: 12px;
+  
+  text-decoration: none;
+  border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
