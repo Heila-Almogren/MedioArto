@@ -1,0 +1,145 @@
+
+
+
+@font-face {
+    font-family: "Muli-ExtraLightItalic";
+    src: url("Fonts/Muli-ExtraLightItalic.ttf") format("truetype");
+}
+
+
+
+@font-face {
+    font-family: "HappySweetyDemoRegular";
+    src: url("Fonts/HappySweetyDemoRegular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Muli-Reg";
+    src: url("Fonts/Muli.ttf") format("truetype");
+}
+body{
+    background-color: dodgerblue;
+    margin: 0;
+}
+.MenuBar {
+  background-color: rgba(255,70, 0, 0.8);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: "Muli-Reg";
+    z-index: 100;
+}
+
+.logo {
+  width: 130px;
+  height: 45px;
+}
+
+
+.menuText {
+  margin: 14px 16px;
+  color: white;
+}
+
+
+.MenuBar a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  height: 50px;
+
+  font-size: 17px;
+}
+
+
+.MenuBar a:hover {
+  background-color: rgba(255,70, 0, 0.5);
+  color: black;
+    
+}
+
+.MenuBar a.active {
+  color: white;
+  background-color: rgba(255,77, 0, 0.9);
+
+}
+
+.MenuBar a.active:hover {
+background-color: rgba(255,70, 0, 1);
+    cursor:default;
+}
+
+
+
+  {
+  box-sizing: border-box;
+}
+
+.choose{
+    min-width: 100%;
+    text-align: center;
+    font-family: "Muli-Reg";
+    color: white;
+    border: solid rgba(0,0,0,0);;
+    
+    
+}
+
+
+fieldset{
+    border: solid white;
+    margin: 100px;
+    margin-bottom: 0px;
+    height: 500;
+    border-radius: 40px;
+      text-align: center;
+    border: solid rgba(0,0,0,0);
+    
+    
+}
+
+
+
+legend{
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 50px;
+}
+
+.role{
+cursor: pointer;
+    display: inline-block;
+}
+.roleImg{
+    height: 200px;
+}
+
+.roleTitle{
+    font-size: 25px;
+}
+
+.roleDesc{
+    font-size: 15px;
+    width: 300px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.verticalLine {
+    width: 0px;
+    height: 400px;
+  border-left: thin solid black;
+    border-right: medium solid black;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+
+.skeleton{
+    height: 700px;
+}

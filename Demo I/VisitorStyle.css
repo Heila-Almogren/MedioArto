@@ -1,0 +1,765 @@
+@font-face {
+    font-family: "Muli-ExtraLightItalic";
+    src: url("fonts/Muli-ExtraLightItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "HappySweetyDemoRegular";
+    src: url("fonts/HappySweetyDemoRegular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Muli-Reg";
+    src: url("fonts/Muli.ttf") format("truetype");
+}
+
+
+
+body{
+    background-image: url(Images/20.jpg);
+    background-size:auto;
+    margin: 0 auto;
+    width:100%;
+        
+
+    
+}
+
+.content {
+  
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+
+div.blockline{
+    display: inline-block !important;
+}
+
+.nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    font-family: "Muli-Reg";
+}
+
+.logo {
+  width: 130px;
+  height: 45px;
+}
+
+
+.userProfileIcon{
+      width: 40px;
+  height: 40px;
+    border-radius: 50%;
+    margin:7px;
+    
+}
+
+.menuText{
+     margin: 14px 16px;
+    color: white;
+    
+}
+
+
+
+.nav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  height: 50px;
+  
+  font-size: 17px;
+    
+}
+
+
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+    
+}
+
+.nav a.active {
+background-color: rgba(0, 0, 0, 0.0);
+    color: white;
+    
+    
+    
+}
+
+{box-sizing: border-box;}
+
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+.closeButton{
+    
+    width: 20px;
+    height: 20px;
+    float:right;
+    clear:right;
+    border:none;
+    margin-right: 10px;
+    border-radius: 50%;
+    border-color: white;
+    background-color:whitesmoke;
+    font-size: 10px;
+    color: darkgray;
+    
+    
+}
+
+
+.ProfileOption{
+    font-family: "Muli-Reg";
+    font-size: 12px;
+    padding: 7px;
+    
+    
+}
+
+.ProfileTitle{
+    font-family: "Muli-Reg";
+    margin-left: 10px;
+}
+
+.ProfileOption:hover{
+    font-size: 15px;
+        background-color:rgba(201, 201, 201, 0.1);
+    text-decoration: none !important;
+
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 50px;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+    background-color: white;
+    text-decoration: none !important;
+}
+
+.form-container {
+  text-decoration: none !important;
+  width: 150px;
+  background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+.SideMenu{
+    background-color: rgba(201, 201, 201, 0.5);
+    height: 700px;
+    min-height: 100%;
+        padding-left: 20px;
+    padding-right:20px;
+    width: 300px;
+    position: absolute;
+    top:50px;
+    left: 0px;
+    box-shadow: 15px 0px 15px 0px rgba(0,0,0,0.2);
+    
+}
+
+
+.SideMenuTitle{
+    
+    font-family: "Muli-Reg";
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 20px;
+
+    color:white;
+}
+
+.MenuElements{
+    padding-top: 20px;
+    border-top-color: black;
+    border-top-width: thick;
+    border-top-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: thick;
+    border-bottom-style: solid;
+    height: 400px;
+    font-family: "Muli-Reg";
+    overflow: scroll;
+}
+
+
+/*multiple choice */
+.container {
+    
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+/*Scroll Bar */
+::-webkit-scrollbar {
+  width: 10px;
+    opacity: 0.1;
+    border-radius: 20px;
+    margin-right: 20px;
+    display: none;
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    
+   
+  background: #fff; 
+    border-radius: 20px;
+    
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    
+  background: #fff; 
+    border-radius: 20px;
+}
+
+
+
+/* search button */
+button.SearchButton {
+    height: 30px;
+    width: 100px;
+  transition-duration: 0.4s;
+  background-color: #eee;
+  color: black;
+  border: 0px solid black;
+    font-family: "Muli-Reg";
+    
+}
+
+button.SearchButton:hover {
+  background-color: black;
+  color: white;
+}
+
+
+
+
+
+
+/* gallery */
+	
+	a.polaroid {
+		display: block;
+		text-decoration: none;
+		color: #333;
+		padding: 10px 10px 20px 10px;
+		width: 150px;
+		
+		background-color: white;
+		z-index: 2;
+		font-size: 0.7em;
+		-webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+		-moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+		box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+		-webkit-transition: -webkit-transform 0.5s ease-in;
+	}
+	a.polaroid:hover,
+	a.polaroid:focus,
+	a.polaroid:active {
+		z-index: 999;
+		border-style: #6A6A6A;
+		-webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+		-moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+		box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	.polaroid img {
+		margin: 0 0 15px;
+		width: 150px;
+		height: 150px;
+	}
+	
+	a img {
+		border: none;
+		display: block;
+	}
+
+	.photo-album {
+		position: relative;
+        margin-top: 100px;
+        margin-left: 400px;
+        
+		
+		
+		max-width: 70em;
+		height: 450px;
+		
+		min-width: 800px;
+		max-width: 900px;
+	}
+	.photo-album .polaroid {
+		position: absolute;
+	}
+	
+	
+	.photo-album .small {
+		width: 75px;
+		padding: 6px 6px 12px 6px;
+		font-size: 0.6em;
+	}
+	.photo-album .small img {
+		width: 75px;
+		height: 75px;
+	}
+	.photo-album .medium {
+		width: 200px;
+		padding: 13px 13px 26px 13px;
+		font-size: 0.8em;
+	}
+	.photo-album .medium img {
+		width: 200px;
+		height: 200px;
+	}
+	.photo-album .large {
+		width: 300px;
+		padding: 20px 20px 30px 20px;
+		font-size: 1em;
+	}
+	.photo-album .large img {
+		width: 300px;
+		height: 300px;
+	}
+	.photo-album .img1 {
+		bottom: 10px;
+		right: 365px;
+		-webkit-transform: rotate(10deg);
+		-moz-transform: rotate(10deg);
+		transform: rotate(10deg);
+	}
+	.photo-album .img2 {
+		top: 50px;
+		right: 20px;
+		-webkit-transform: rotate(-4deg);
+		-moz-transform: rotate(-4deg);
+		transform: rotate(-4deg);
+	}
+	.photo-album .img3 {
+		left: 400px;
+		top: 0;
+		-webkit-transform: rotate(-5deg);
+		-moz-transform: rotate(-5deg);
+		transform: rotate(-5deg);
+	}
+	.photo-album .img4 {
+		top: 10px;
+		left: 495px;
+		-webkit-transform: rotate(-20deg);
+		-moz-transform: rotate(-20deg);
+		transform: rotate(-20deg);
+	}
+	.photo-album .img5 {
+		bottom: 0;
+		right: 0;
+		-webkit-transform: rotate(1deg);
+		-moz-transform: rotate(1deg);
+		transform: rotate(1deg);
+	}
+	.photo-album .img6 {
+		bottom: 10px;
+		right: 156px;
+		-webkit-transform: rotate(6deg);
+		-moz-transform: rotate(6deg);
+		transform: rotate(6deg);
+	}
+	.photo-album .img7 {
+		bottom:0;
+		left:400px;
+		-webkit-transform: rotate(-10deg);
+		-moz-transform: rotate(-10deg);
+		transform: rotate(-10deg);
+	}
+	.photo-album .img8 {
+		bottom: -20px;
+		left: 700px;
+		-webkit-transform: rotate(-8deg);
+		-moz-transform: rotate(-8deg);
+		transform: rotate(-8deg);
+	}
+	.photo-album .img9 {
+		bottom: 0;
+		left: 0;
+		-webkit-transform: rotate(-8deg);
+		-moz-transform: rotate(-8deg);
+		transform: rotate(-8deg);
+	}
+	.photo-album .img10 {
+		top: 0;
+		left: 20px;
+		-webkit-transform: rotate(8deg);
+		-moz-transform: rotate(8deg);
+		transform: rotate(8deg);
+	}
+	.photo-album .img11 {
+		top: 0;
+		right: 0;
+		-webkit-transform: rotate(-8deg);
+		-moz-transform: rotate(-8deg);
+		transform: rotate(-8deg);
+	}
+	.photo-album .img12 {
+		top: 0;
+		left: 680px;
+		-webkit-transform: rotate(18deg);
+		-moz-transform: rotate(18deg);
+		transform: rotate(18deg);
+	}
+	.photo-album .img13 {
+		bottom: -20px;
+		right: 630px;
+		-webkit-transform: rotate(4deg);
+		-moz-transform: rotate(4deg);
+		transform: rotate(4deg);
+	}
+	.photo-album .img14 {
+		top: 90px;
+		left: 430px;
+		-webkit-transform: rotate(15deg);
+		-moz-transform: rotate(15deg);
+		transform: rotate(15deg);
+	}
+	.photo-album .img15 {
+		left:176px;
+		top:20px;
+		-webkit-transform: rotate(-8deg);
+		-moz-transform: rotate(-8deg);
+		transform: rotate(-8deg);
+	}
+	
+	a:hover,
+	a:focus {
+		z-index: 5;
+	}
+	
+
+
+div.mainTitleDiv {
+    font-size: 70px;
+    color: white;
+    font-family: "HappySweetyDemoRegular";
+    margin-top: 100px;
+    margin-left: 450px;
+    
+}
+
+
+
+div.favouriteList{
+    
+        position: fixed;
+    top:150px;
+    left: 600px;
+    width: 300px;
+    height: 500px;
+    overflow: scroll;
+    border-color: black;
+    border-radius: 20px;
+    border-style: dashed;
+}
+
+div.FavouriteListTitle {
+    
+    font-size: 70px;
+    color: white;
+    font-family: "HappySweetyDemoRegular";
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    top: 280px;
+    left:300px;
+}
+
+.like-btn-svg {
+  width: 80px;
+  height: 100px;
+  background: url(https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png) no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+    display: inline-block;
+}
+
+input[type="checkbox"] {
+  display:none;
+}
+
+input:checked + .like-btn-svg{
+  transition: background 1s steps(28);
+  animation: fave-like-btn-svg 1s steps(28);
+  background-position: -2800px 0;
+}
+
+@keyframes fave-like-btn-svg {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2800px 0;
+  }
+}
+
+
+div.FavouriteItem{
+vertical-align: middle;
+  margin-top: -90px;
+  display: inline-block;
+    background-color: rgba(201, 201, 201, 0.5);
+    height: 30px;
+    border-radius: 25px;
+        text-align: center;
+    width: 150px;
+    font-family: "Muli-Reg";
+    box-shadow: 15px 0px 15px 0px rgba(0,0,0,0.2);
+}
+
+
+p.tailtext{
+    font-family: "Muli-Reg";
+    
+    color: white;
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    text-align: center;
+    opacity: 0.5;
+}
+
+a, a:link, a:visited, a:active, a:hover {
+    border-bottom-style: none;
+    text-decoration:none;
+    border:0!important;
+    color: inherit;
+}
+
+
+
+
+
+
+
+
+div.footer{
+    
+    font-family: "Muli-ExtraLightItalic";
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 150px;
+    min-width: 100%;
+    
+    margin-top: 155px;
+    
+    padding: 50px;
+    overflow:scroll;
+}
+
+div.footerC{
+    display:inline-grid;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    
+}
+
+div.col{
+    font-size: 14px;
+    display:flex;
+    position: inherit;
+    margin: 3px;
+    
+}
+
+div.brief{
+    font-family: "Muli-Reg";
+    text-align: justify;
+    border-right-color: solid;
+    border-right-style: dashed;
+    padding-right: 20px;
+    width: 250px;
+   font-weight: 400;
+    
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 12px;
+    height: 12px;
+  
+  text-decoration: none;
+  border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+

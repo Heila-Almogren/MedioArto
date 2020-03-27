@@ -1,0 +1,398 @@
+@font-face {
+    font-family: "SweetGetawayDemoRegular-2XyK";
+    src: url("fonts/Robot Crush copy.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: "Muli-ExtraLightItalic";
+    src: url("fonts/Muli-ExtraLightItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "HappySweetyDemoRegular";
+    src: url("fonts/HappySweetyDemoRegular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Muli-Reg";
+    src: url("fonts/Muli.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "flores";
+    src: url("Fonts/flores-font/FloresDemo-nRAjO.ttf") format("truetype");
+}
+
+
+html{
+    width:100%;
+    overflow-x: hidden !important;
+}
+
+body{
+    background-color: dodgerblue;
+    background-size:auto;
+    margin: 0 auto;
+    width:100%;
+overflow-x: hidden;
+}
+
+.content {
+  
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+
+div.blockline{
+    display: flex!important;
+    height: 730px;
+    box-shadow: 30px 0px 30px 0px rgba(0,0,0,0.2);
+    z-index: 100px;
+}
+
+.innerTable{
+        border-style:solid;
+    border-color:black;
+    border-radius: 25px;
+}
+
+.SideMenu{  /*keep*/
+    
+    height: 680px;
+    padding-left: 20px;
+    padding-right:20px;
+    width: 800px;
+    position: relative;
+    top:50px;
+    right: -350px;
+    background-color: rgba(201, 201, 201, 0.5);
+    box-shadow: 15px 0px 15px 0px rgba(0,0,0,0.2);
+    font-weight: 500;
+    
+}
+
+
+
+
+.SideMenuTitle{ /*keep*/
+    height: 150px;
+    width: 150px;
+    font-family: "Muli-Reg";
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+background-color:white;
+    text-align: center;
+    padding: 70px;
+    border-radius: 50%;
+    color:black;
+    vertical-align: middle;
+}
+
+.MenuElements{  /*keep*/
+    padding-top: 20px;
+    margin-top: 30px;
+    height: 520px;
+    width: 300px;
+    font-family: "Muli-Reg";
+    overflow-x: scroll;
+}
+
+
+
+
+
+.container {    /*keep*/
+    
+  display: block;
+  position: relative;
+  padding-left: 35px;
+        margin-left: 30px;
+    
+    margin-bottom: 12px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+    
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+    
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+/*Scroll Bar */
+::-webkit-scrollbar {
+  width: 10px;
+    opacity: 0.1;
+    border-radius: 20px;
+    margin-right: 20px;
+    display: none;
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    
+   
+  background: #fff; 
+    border-radius: 20px;
+    
+}
+
+
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    
+  background: #fff; 
+    border-radius: 20px;
+}
+
+
+.MenuElements::-webkit-scrollbar {
+  width: 10px;
+    opacity: 0.1;
+    border-radius: 20px;
+    margin-right: 20px;
+    display: unset;
+}
+
+
+
+/* search button */
+button.SearchButton {
+    height: 30px;
+    width: 100px;
+  transition-duration: 0.4s;
+  background-color: #eee;
+  color: black;
+  border: 0px solid black;
+    font-family: "Muli-Reg";
+    border-radius: 15px;
+    cursor: pointer;
+    
+}
+
+button.SearchButton:hover {
+  background-color: black;
+  color: white;
+}
+
+#buttons{
+    margin-left: 55px;
+    
+}
+
+
+div.mainTitleDiv {
+    font-size: 100px;
+    color: white;
+    font-family: "SweetGetawayDemoRegular-2XyK";
+    margin-top: 10px;
+    margin-left: 200px;
+    position: relative;
+     transition-timing-function: ease-in-out;
+  transition: 0.4s;
+    float: left;
+    width: 500px;
+    animation-timing-function:linear;
+    animation-duration: 5;
+}
+
+#LDSA{
+    padding-left: 50px;
+    border-left-style: solid;
+    border-left-color: black;
+    border-left-width: thick;
+}
+
+
+
+div.favouriteList{
+    
+        position: fixed;
+    top:150px;
+    left: 600px;
+    width: 300px;
+    height: 500px;
+    overflow: scroll;
+    border-color: black;
+    border-radius: 20px;
+    border-style: dashed;
+}
+
+div.FavouriteListTitle {
+    
+    font-size: 70px;
+    color: white;
+    font-family: "HappySweetyDemoRegular";
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    top: 280px;
+    left:300px;
+}
+
+.like-btn-svg {
+  width: 80px;
+  height: 100px;
+  background: url(https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png) no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+    display: inline-block;
+}
+
+input[type="checkbox"] {
+  display:none;
+}
+
+input:checked + .like-btn-svg{
+  transition: background 1s steps(28);
+  animation: fave-like-btn-svg 1s steps(28);
+  background-position: -2800px 0;
+}
+
+@keyframes fave-like-btn-svg {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2800px 0;
+  }
+}
+
+a, a:link, a:visited, a:active, a:hover {
+    border-bottom-style: none;
+    text-decoration:none;
+    border:0!important;
+    color: inherit;
+}
+
+
+div.FavouriteItem{
+vertical-align: middle;
+  margin-top: -90px;
+  display: inline-block;
+    background-color: rgba(201, 201, 201, 0.5);
+    height: 30px;
+    border-radius: 25px;
+        text-align: center;
+    width: 150px;
+    font-family: "Muli-Reg";
+    box-shadow: 15px 0px 15px 0px rgba(0,0,0,0.2);
+}
+
+
+#featured{
+    
+    background-color: white;
+    height: auto;
+    min-width: 100%;
+    overflow: scroll;
+    text-align: center;
+    padding-top: 30px;
+    
+}
+
+.featuredArtTitle{
+display: inline-block;
+    width: 350px;
+    height: 60px;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 100px;
+    font-family: "flores";
+    border-bottom-color: black;
+    border-bottom-style:solid;
+}
+.featuredImg{
+    
+    height: 200px;
+    width: 200px;
+    
+    border-radius: 50%;
+    
+    
+}
+
+.featuredImg:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.centralized{
+    display:inline-block;
+    text-align: center;
+}
+
+figure{
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+       font-family: "Muli-Reg";
+    font-size: 15px;
+    margin:50px;
+    
+}
+

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Zoo Bags</title>
+    <link rel="stylesheet" type="text/css" href="artifactStyle.css">
+    
+    <script>
+        
+        function SendComment(){
+            
+            
+            
+                var inputContent = document.getElementById("commentBox").value;
+            
+            if(inputContent != ""){
+                var table = document.getElementById("commentTable");
+                var row = table.insertRow(table.rows.length);
+                
+                var cell1 = row.insertCell(0);
+                cell1.style.borderLeftStyle = "solid";
+            cell1.style.borderLeftColor = "orange";
+            cell1.style.height = "auto";
+            cell1.style.width = "200px";
+            cell1.style.paddingBottom = "10px";
+            cell1.style.paddingLeft = "10px";
+            cell1.innerHTML = "" + document.getElementById("commentTable").Value;
+            cell1.innerHTML = inputContent;
+            }
+			    
+        }
+    </script>
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <!--javascript of profile pop-up menu-->
+    <script>
+        function openForm() {
+            
+            var viewButton = document.getElementById("myForm");
+                viewButton.style.display = "block"; }
+        
+        function closeForm() {
+                document.getElementById("myForm").style.display = "none";   }
+        
+    </script> 
+</head>
+<body>
+    
+     <!--Navigation bar-->
+<div class="nav">
+  
+    <a class="active" onclick="openForm()">
+            <img src="Images/Neutral-placeholder-profile.jpg" class="userProfileIcon"></a>
+
+    <a href="About2.html"><p class="menuText">About</p></a>
+    <a href="All Artist page.html "><p class="menuText" >Artists</p></a>
+    <a href="Artworks.html"><p class="menuText">Artifacts</p></a>
+        <a href="visiterPage.html"><p class="menuText">Home</p></a>
+
+            <img href="MedioArto.html" src="Images/Leaves.png" alt="logo" class="logo">
+</div>
+      
+    
+    
+    
+   <!--pop-up menu of profile image-->
+   
+<div class="form-popup" id="myForm">
+  <form class="form-container">
+      
+      <p class ="ProfileTitle">
+      Hello, Sara! <button class="closeButton" type="submit" onclick="closeForm()">&times;</button></p>
+      
+      
+      
+      
+      
+      <a href="FavouriteList.html">
+      <div class="ProfileOption">
+      &#10084;&#65039; &nbsp; Favourite List
+      </div></a>
+      
+      
+      
+      <a href="MedioArto.html">
+      <div class="ProfileOption">
+      &#x1f511; &nbsp; Logout
+      </div></a>
+    
+  </form>
+</div>
+    
+    
+    
+      
+    
+     <div class="mainDiv">
+    
+    
+         
+    <div class"HorizOrder">
+         
+         <div class="TitleSyle collect">
+  
+        
+             
+         Zoo Bags
+             
+             <text class = "author">By Andy Moore</text>
+             
+             
+    </div>
+            
+         
+         <div class="collect">
+        
+                
+<div class="ArtImg" >
+    
+
+   <img href="MedioArto.html" src="Images/ArtWorks/plastic-bottle-art-30.jpg" alt="logo" class="Img">
+
+
+    
+ </div>
+         
+
+    
+ 
+    
+    
+    
+    <fieldset  class="ArtDes" >
+<legend >What to have:</legend>
+        
+        
+          <table style="width:100%">
+  
+  <tr>
+    <td width="10%">&#10004;</td>
+    <td>Plastic Bottles</td>
+  </tr>
+  <tr>
+    <td width="10%">&#10004;</td>
+    <td>Old Fabrics</td>
+  </tr>
+     <tr>
+    <td width="10%">&#10004;</td>
+    <td>Metal Zips</td>
+  </tr>
+    <tr>
+    <td width="10%">&#10004;</td>
+    <td>Fake Eyes.. etc</td>
+  </tr>
+</table>
+        
+</fieldset>
+    
+    
+    
+         </div>
+        
+        <!--mehh-->
+        <div class="collect">
+        
+ 
+    <fieldset  class="ArtHow" >
+<legend >What to do:</legend>
+        
+        <table style="width:100%">
+  
+  <tr>
+    <td width="10%" class="num">1</td>
+    <td>Cut the bottom quaters of Plastic Bottles. </td>
+  </tr>
+  
+  <tr>
+    <td width="10%" class="num">2</td>
+    <td>Attach a couple of bottoms with each other using metal zip.</td>
+  </tr>
+            
+            
+<tr>
+    <td width="10%" class="num">3</td>
+    <td>Cut fabrics to create mouth and nose and paste fake eyes.</td>
+  </tr>
+</table>
+        
+        
+</fieldset>
+    
+    
+    
+         </div>
+        <!--end (it worked!!)-->
+         
+     
+       <div class="CommentArea">
+       
+            
+        <table style="width:100%" id="commentTable">
+  
+  <tr>
+    <td>
+        
+        Leave a comment</td>
+    <td width="1%">
+    
+      </td>
+      <td  width="15%" class="ReaderField">
+      Add to favourites!
+      </td>
+  </tr>
+  
+  <tr>
+    <td>
+        
+        <input type="text" id="commentBox" name="commentBox" class="commentBox">
+            <input type="button" value="&rarr;" class="commentButton" onclick="SendComment()">
+        
+        </td>
+      
+      <td width="1%"></td>
+      
+    <td  width="15%"  class="ReaderField"> 
+        
+        <label><input type="checkbox">
+                <div class="like-btn-svg"></div>
+            </label>
+        
+        
+      
+      </td>
+  </tr>
+            
+    
+</table>
+        
+         </div>
+
+        
+        
+        
+        
+        
+    
+            
+            
+            
+        
+        
+    </div>
+
+    </div>
+        
+
+    
+
+        
+
+    <div class="footer">
+    
+    <div class="footerC brief">
+        Medio Arto is a platform for eco-friendly art to share ideas of recycling items that usually reside in the recycling bin.. go and share yours now!
+        </div>
+        
+        <div class="footerC">
+        Contact Us:
+        <div class=" footerC col">
+        email: &nbsp;
+        <a href="mailto:info@medioarto.com">info@medioarto.com</a> </div>
+        <div class=" footerC col">
+        tel: +966563636787</div>
+        
+        
+        <div class=" footerC col">
+        Address:</div>
+        
+        
+        <div class=" footerC col">
+        11314 Riyadh, Saudi Arabia</div>
+        </div>
+        
+        <div class="footerC">
+        Find Us on Social Media!
+        
+        
+        <div class=" footerC col">
+        <div class=" footerC col">
+        <a href="#" class="fa fa-twitter"></a>
+            &nbsp;
+        <a href="#" class="fa fa-facebook"></a> 
+            &nbsp;
+        <a href="#" class="fa fa-youtube"></a>     &nbsp;
+        <a href="#" class="fa fa-instagram"></a> 
+            </div>
+            
+            </div>
+        
+        
+        </div>
+        
+        
+        
+        
+        
+        </div>
+   
+     
+
+
+</body>
+</html>
