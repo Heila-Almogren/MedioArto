@@ -5,6 +5,7 @@
 @font-face {
     font-family: 'Muli-Reg';
     src: url("fonts/Muli.ttf") format("truetype");
+    
 }
 
 body {
@@ -12,6 +13,8 @@ background-image: url(Images/20.jpg);
     background-size: cover;
     font-family = "Muli-Reg";
     display: inline-block;
+        color: midnightblue
+
 }
 
 div.mainDiv{
@@ -21,32 +24,36 @@ div.mainDiv{
 
 div.TitleSyle{
     font-family: "Muli-ExtraLightItalic";
-    font-size: 15px;
+    font-size: 20px;
     
-    color: antiquewhite;
-    width: 200px;
+    color: midnightblue;
+    width: 400px;
+    
     height: 200px;
     position:fixed;
     left:30%;
-    top: 15%;
+    top: 10%;
 }
 
 div.BoxStyle{
-    
+    color: midnightblue
+    font-size: 20px;
+    margin-top: 5PX;
+
     display: block;
-    width: 350px;
+    width: 400px;
     height: auto;
     font-family : "Muli-Reg";
-    margin-left: 20px;
+    margin-left: 10px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 20px;
     border-top-left-radius: 10px;
-    border-color: white;
+    border-color: midnightblue;
     border-style: dashed;
-    padding: 20px;
+    padding: 25px;
     text-align: justify;
-    
+
 }
 
 
@@ -60,13 +67,15 @@ div.BoxStyle{
 }
 
 div.team{
+    
     font-family : "Muli-Reg";
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-top: 9PX;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 20px;
     border-top-left-radius: 10px;
-    border-color: white;
+    border-color: midnightblue;
     border-style: dashed;
     padding: 20px;
 }
@@ -101,6 +110,7 @@ div.titleDiv {
   left:0;
   width:100%;
   font-family: "Muli-Reg";
+    
 }
 
 .logo {
@@ -110,8 +120,8 @@ div.titleDiv {
 
 .menuText{
      margin: 14px 16px;
-    color: white;
-    
+    color: midnightblue;
+    //
 }
 
 .nav
@@ -123,6 +133,7 @@ div.titleDiv {
   left:0;
   width:100%;
   font-family: "Muli-Reg";
+    
 }
 
 .logo {
@@ -137,6 +148,7 @@ div.titleDiv {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+    
 }
 
 .nav a:hover {
@@ -194,19 +206,22 @@ div.titleDiv {
     font-family: "Muli-Reg";
     font-size: 12px;
     padding: 7px;
-    
+    color: black
     
 }
 
 .ProfileTitle{
     font-family: "Muli-Reg";
     margin-left: 10px;
+        color: black
+
 }
 
 .ProfileOption:hover{
     font-size: 15px;
         background-color:rgba(201, 201, 201, 0.1);
     text-decoration: none !important;
+    
 
 }
 
@@ -291,7 +306,8 @@ div.footerC{
     margin-top: 20px;
     margin-left: 40px;
     margin-right: 40px;
-    
+        color: white
+
 }
 
 div.col{
