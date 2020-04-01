@@ -19,19 +19,24 @@
 }
 
 #MenuBar {
-  background-color: rgba(255,70, 0, 0.8);
+  background-color:rgba(255,70, 0, 1);
   overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: auto;
   font-family: "Muli-Reg";
     z-index: 100;
+    min-width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    
 }
 
 .logo {
   width: 130px;
   height: 45px;
+    margin-right: 50px;
 }
 
 .userProfileIcon {
@@ -45,7 +50,7 @@
 
 .menuText {
   margin: 14px 16px;
-  color: white;
+  
 }
 
 #MenuBar a {
@@ -59,17 +64,17 @@
 
 
 #MenuBar a:hover {
-  background-color: rgba(255,70, 0, 0.5);
+  background-color:white;
   color: black;
 }
 
-MenuBar a.active:hover {
-background-color: rgba(255,70, 0, 0.8);
+#MenuBar a.active:hover {
+    color: white;
 }
 
-MenuBar a.active {
-  background-color: rgba(0, 0, 0, 0.0);
-  color: white;
+#MenuBar a.active {
+background-color:rgba(255,70, 0, 1);
+    cursor: default;
 }
 
   {
@@ -103,9 +108,4 @@ MenuBar a.active {
   background-color: #f1f1f1;
   text-decoration: none !important;
     width: 150px;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }

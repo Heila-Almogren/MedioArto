@@ -55,18 +55,21 @@
             
             $(".SideMenu").mouseover(function() {
                 
-                $(".mainTitleDiv").stop().animate({
+                $(".mainTitleDiv").stop(true).animate({
              
              left: '-100px',}, {
                     queue: false,
-                }, "100")
+                },"50");
                 
-                
-                $(".SideMenu").stop().animate({
+                $(".SideMenu").stop(true).animate({
              
              right: '-50px',}, {
                     queue: false,
-                }, "100")
+                }, "50");
+                
+                
+                
+                
                 
                 
              
@@ -98,10 +101,10 @@
            
     <div id="MenuBar">
 
-      <a class="active">
+      <a>
         <img src="Images/Neutral-placeholder-profile.jpg" class="userProfileIcon" id="x"></a>
 
-      <a href="About2.html">
+      <a href="About-Visitor.html">
         <p class="menuText">About</p>
       </a>
       <a href="All Artist page.html">
@@ -110,7 +113,7 @@
       <a href="AllArtworks.html">
         <p class="menuText">Artifacts</p>
       </a>
-      <a href="visiterPage.html">
+      <a  class="active" href="visiterPage.html">
         <p class="menuText">Home</p>
       </a>
 
@@ -135,7 +138,7 @@
 
         <a href="FavouriteList.html">
           <div class="ProfileOption">
-            &#10084;&#65039; &nbsp; Favourite List
+            &#128100; &nbsp; Edit Account
           </div>
         </a>
 
@@ -196,11 +199,7 @@
 <div class="MenuElements">
     
     <table>
-    <tr>
-        <td>
-            
-        </td>
-        </tr>
+    
     <!--row-->
     <tr>
         <td>

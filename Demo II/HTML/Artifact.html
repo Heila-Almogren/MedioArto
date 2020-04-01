@@ -6,6 +6,7 @@
      <link rel="stylesheet" type="text/css" href="CSS/Navigation-visitor.css">
     <link rel="stylesheet" type="text/css" href="CSS/footer.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="JS/menuBar.js"></script>
     <script>
         
         function SendComment(){
@@ -30,7 +31,7 @@
                 
                 
                 
-                cell1.innerHTML = " <img src='Images/Neutral-placeholder-profile.jpg' style='width:80px; height: 80px; border-radius: 30px;'> <p style='height: auto; margin-top: 0px; text-align: center'> Jerry</p>";
+                cell1.innerHTML = " <img class='im' src='Images/Neutral-placeholder-profile.jpg' style='width:80px; height: 80px; border-radius: 30px;'> <p style='height: auto; margin-top: 0px; text-align: center'> Jerry</p>";
                     
                 
               
@@ -51,35 +52,27 @@
     </script>
    
  <!--javascript of profile pop-up menu-->
-    <script>
-        function openForm() {
-            
-            var viewButton = document.getElementById("myForm");
-                viewButton.style.display = "block"; }
-        
-        function closeForm() {
-                document.getElementById("myForm").style.display = "none";   }
-        
-    </script> 
+    
 </head>
 <body>
     
      <!--Navigation bar-->
-<div id="MenuBar">
+ 
+    <div id="MenuBar">
 
-      <a class="active">
+      <a>
         <img src="Images/Neutral-placeholder-profile.jpg" class="userProfileIcon" id="x"></a>
 
-      <a href="About2.html">
+      <a href="About-Visitor.html">
         <p class="menuText">About</p>
       </a>
       <a href="All Artist page.html">
         <p class="menuText">Artists</p>
       </a>
-      <a href="AllArtifacts.html">
+      <a href="AllArtworks.html">
         <p class="menuText">Artifacts</p>
       </a>
-      <a href="visiterPage.html">
+      <a  class="active" href="visiterPage.html">
         <p class="menuText">Home</p>
       </a>
 
@@ -104,7 +97,7 @@
 
         <a href="FavouriteList.html">
           <div class="ProfileOption">
-            &#10084;&#65039; &nbsp; Favourite List
+            &#128100; &nbsp; Edit Account
           </div>
         </a>
 
@@ -128,7 +121,7 @@
         
         
         
-    <img src="Images/ArtWorks/plastic-bottle-art-30%20copy.jpg"  style="height: 300px; padding: 30px; width: 300px; margin-top:50px; background-color: white;">
+    <img class="im" src="Images/ArtWorks/plastic-bottle-art-30%20copy.jpg"  style="height: 300px; padding: 30px; width: 300px; margin-top:50px; background-color: white;">
     </div>
     
     <div style="border: dashed orange; border-width: thick; width: auto; min-height: 400px; margin: 30px; border-radius: 40px; text-align: center; border-bottom: none; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; ">
@@ -138,11 +131,11 @@
             
             <tr>
                 <td>
-                    <img src="Images/person_110935.png" style="height: 20px; width: 20px; margin-top: 5px;"/> &nbsp;
+                    <img class="im" src="Images/person_110935.png" style="height: 20px; width: 20px; margin-top: 5px;"/> &nbsp;
                     By: Jiff Thomas
                 </td>
                 <td>
-                    <img src="Images/clock.png" style="height: 20px; width: 20px; "> &nbsp; 25 minutes
+                    <img class="im" src="Images/clock.png" style="height: 20px; width: 20px; "> &nbsp; 25 minutes
                 </td>
                 
                 <td>
@@ -290,7 +283,7 @@
             <tr>
                 <td style="width:100px; text-align: center; vertical-align: middle">
                    
-                <img src="Images/Neutral-placeholder-profile.jpg" style="width:80px; height: 80px; border-radius: 30px;">
+                <img class="im" src="Images/Neutral-placeholder-profile.jpg" style="width:80px; height: 80px; border-radius: 30px;">
                     <p style="height: auto; margin-top: 0px; text-align: center; vertical-align: top;">
             Clara
                     </p>
@@ -312,7 +305,7 @@
             <tr>
                 <td style="width:100px; text-align: center; vertical-align: center;">
                    
-                <img src="Images/Neutral-placeholder-profile.jpg" style="width:80px; height: 80px; border-radius: 30px;">
+                <img class="im" src="Images/Neutral-placeholder-profile.jpg" style="width:80px; height: 80px; border-radius: 30px;">
                     <p style="height: auto; margin-top: 0px; text-align: center; vertical-align: top;">
             Jerry
                     </p> 
@@ -411,6 +404,7 @@
             </div>
         
         
+        </div>
         </div>
         
         
