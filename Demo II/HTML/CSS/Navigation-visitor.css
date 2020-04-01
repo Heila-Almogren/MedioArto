@@ -50,7 +50,6 @@
 
 .menuText {
   margin: 14px 16px;
-  
 }
 
 #MenuBar a {
@@ -69,11 +68,12 @@
 }
 
 #MenuBar a.active:hover {
-    color: white;
+    
 }
 
 #MenuBar a.active {
-background-color:rgba(255,70, 0, 1);
+background-color:white;
+    color: black;
     cursor: default;
 }
 
@@ -108,4 +108,11 @@ background-color:rgba(255,70, 0, 1);
   background-color: #f1f1f1;
   text-decoration: none !important;
     width: 150px;
+}
+
+a, a:link, a:visited, a:active, a:hover {
+    
+    text-decoration:none;
+    
+    color: inherit;
 }
