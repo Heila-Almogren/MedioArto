@@ -14,6 +14,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="JS/menuBar.js"></script>
       
+      <script>
+          window.onload = function(){
+        var x = document.querySelectorAll('figure').length;
+
+
+    document.getElementById("total").innerText = "TOTAL: " + x + " RESULTS";
+
+};
+          
+      
+      </script>
       
   </head>
 
@@ -114,7 +125,7 @@
        
 
       
-      <p style="font-size: 15px; font-family: 'Muli-Reg';  width: 90%; margin: auto; margin-bottom: 100px; text-align: center;border-top: solid lightgrey; padding: 40px;">TOTAL: 8 RESULTS</p>
+      <p id="total" style="font-size: 15px; font-family: 'Muli-Reg';  width: 90%; margin: auto; margin-bottom: 100px; text-align: center;border-top: solid lightgrey; padding: 40px;">TOTAL: 0 RESULTS</p>
 
 
 

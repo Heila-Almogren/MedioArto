@@ -15,6 +15,16 @@
     <script src="JS/menuBar.js"></script>
       
       
+      <script>
+          window.onload = function(){
+        var x = document.getElementById("res").rows.length;
+    document.getElementById("total").innerText = "TOTAL: " + (x-2) + " RESULTS";
+
+};
+          
+      
+      </script>
+      
   </head>
 
     
@@ -70,7 +80,7 @@
     </nav>
 
       <h1 style="margin: auto; margin-top: 150px; width: 100%; text-align: center; font-family: 'Muli-Reg';">SEARCH RESULTS</h1>
-<table style="font-size: 20px; font-family: 'Muli-Reg'; margin: auto; margin-top: 50px; text-align: left; width: 50%;  border-bottom: solid lightgrey">
+<table id="res" style="font-size: 20px; font-family: 'Muli-Reg'; margin: auto; margin-top: 50px; text-align: left; width: 50%;  border-bottom: solid lightgrey">
     
       <tr>
           
@@ -81,6 +91,17 @@
           <td style="width: 100px; border-bottom: solid lightgrey; text-align: center">
         <img src="Images/clock.png" style="height: 30px; width: 30px; opacity: 0.5;">
           </td>
+    </tr>
+    
+    <tr id="none" style="display: none; text-align: center;">
+          
+    <td>
+        <p style="color: dimgrey">No pending Accounts</p>
+          </td>
+          
+          
+          
+          
     </tr>
     
     
@@ -143,7 +164,7 @@
     </tr>
       </table>
       
-      <p style="font-size: 15px; font-family: 'Muli-Reg';  width: 50%; margin: auto; margin-bottom: 100px;">TOTAL: 4 RESULTS</p>
+      <p id="total" style="font-size: 15px; font-family: 'Muli-Reg';  width: 50%; margin: auto; margin-bottom: 100px;">TOTAL: 0 RESULTS</p>
 
 
 
