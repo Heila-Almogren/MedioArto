@@ -13,7 +13,28 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="JS/menuBar.js"></script>
+      <script>
+          
+          function done(e) {
+                
+                var row = e.parentNode.parentNode;
+                row.parentNode.removeChild(row);
+                
+              var x = document.getElementById("#pendingAcc").length;
+              document.getElementById("#none").style.display = "block";
+              if (x < 10){
+                  
+                  var table = document.getElementById("#pendingAcc");
+                var row = table.insertRow(table.rows.length);
+                
+                var cell1 = row.insertCell(0); // Column #0
+                cell1.innerHTML = "<p>hi</p>";
+              };
+                
+            };
       
+      </script>
+            
       
   </head>
 
@@ -69,81 +90,66 @@
      
     </nav>
 
-      <h1 style="margin: auto; margin-top: 150px; width: 100%; text-align: center; font-family: 'Muli-Reg';">SEARCH RESULTS</h1>
-<table style="font-size: 20px; font-family: 'Muli-Reg'; margin: auto; margin-top: 50px; text-align: left; width: 50%;  border-bottom: solid lightgrey">
+      <h1 style="margin: auto; margin-top: 150px; width: 100%; text-align: center; font-family: 'Muli-Reg';">PENDING ACCOUNTS</h1>
+<table id="pendingAcc" style="font-size: 20px; font-family: 'Muli-Reg'; margin: auto; margin-top: 50px; text-align: left; width: 50%;  border-bottom: solid lightgrey">
     
       <tr>
           
     <td colspan="2" style="border-bottom: solid lightgrey;">
-        <p style="color: dimgrey">RESULT</p>
+        <p style="color: dimgrey">Account</p>
           </td>
           
           <td style="width: 100px; border-bottom: solid lightgrey; text-align: center">
-        <img src="Images/clock.png" style="height: 30px; width: 30px; opacity: 0.5;">
+        <p style="color: dimgrey">Portfolio</p>
           </td>
+          
+          <td style="width: 100px; border-bottom: solid lightgrey; text-align: center">
+        <p style="color: dimgrey">Action</p>
+          </td>
+          
+          
     </tr>
+    
+    <tr id="none" style="display: none;">
+          
+    <td colspan="4" style="border-bottom: solid lightgrey; text-align: center; ">
+        <p style="color: dimgrey">No pending Accounts</p>
+          </td>
+          
+          
+          
+          
+    </tr>
+    
+  
+    
+    
     
     
     <tr>
         
       <td style="width: 120px; padding: 20px;">
-          <img src="Images/ArtWorks/6-tin-can-felt-monsters.jpg" style="width:90px; height: 90px; border-radius: 50%;">
+          <img src="Images/Artists/3.jpg" style="width:90px; height: 90px; border-radius: 50%;">
           </td>    
     <td>
-        Artwork
+        John Smith
           </td>
           
           <td style="width: 100px; text-align: center">
-        25 min
+        <img src="Images/download@3x%20(1).png" style="width: 20px; opacity: 0.5;">
           </td>
-    </tr>
-    
-    
-    
-    <tr>
         
-      <td style="width: 120px; padding: 20px;">
-          <img src="Images/ArtWorks/6-tin-can-felt-monsters.jpg" style="width:90px; height: 90px; border-radius: 50%;">
-          </td>    
-    <td>
-        Artwork
-          </td>
-          
-          <td style="width: 100px; text-align: center">
-        25 min
-          </td>
-    </tr>
-    
-    <tr>
-        
-      <td style="width: 120px; padding: 20px;">
-          <img src="Images/ArtWorks/6-tin-can-felt-monsters.jpg" style="width:90px; height: 90px; border-radius: 50%;">
-          </td>    
-    <td>
-        Artwork
-          </td>
-          
-          <td style="width: 100px; text-align: center">
-        25 min
-          </td>
-    </tr>
-    
-    <tr>
-        
-      <td style="width: 120px; padding: 20px;">
-          <img src="Images/ArtWorks/6-tin-can-felt-monsters.jpg" style="width:90px; height: 90px; border-radius: 50%;">
-          </td>    
-    <td>
-        Artwork
-          </td>
-          
-          <td style="width: 100px; text-align: center">
-        25 min
-          </td>
+        <td>
+        <select onchange="done(this)">
+            <option value="" selected disabled hidden>choose</option>
+  <option value="app">approve</option>
+             <option value="dis">disapprove</option>
+            </select>
+        </td>
     </tr>
       </table>
       
-      <p style="font-size: 15px; font-family: 'Muli-Reg';  width: 50%; margin: auto; margin-bottom: 100px;">TOTAL: 4 RESULTS</p>
+      <p style="font-size: 15px; font-family: 'Muli-Reg';  width: 50%; margin: auto; margin-bottom: 100px;">TOTAL: 4 PENDING</p>
 
 
 
