@@ -6,7 +6,7 @@ $(document).ready(function() {
          
          });
     
-    $("#x").one("mouseover",function() { 
+    $("#x").one("mouseover",function() {
              
              /*
              

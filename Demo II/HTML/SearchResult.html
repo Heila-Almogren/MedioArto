@@ -19,6 +19,12 @@
           window.onload = function(){
         var x = document.getElementById("res").rows.length;
     document.getElementById("total").innerText = "TOTAL: " + (x-2) + " RESULTS";
+              
+              
+              if (x-2 == 0){
+                  document.getElementById("none").style.display = "table-row";
+              }
+              
 
 };
           
@@ -82,6 +88,8 @@
       <h1 style="margin: auto; margin-top: 150px; width: 100%; text-align: center; font-family: 'Muli-Reg';">SEARCH RESULTS</h1>
 <table id="res" style="font-size: 20px; font-family: 'Muli-Reg'; margin: auto; margin-top: 50px; text-align: left; width: 50%;  border-bottom: solid lightgrey">
     
+   
+    
       <tr>
           
     <td colspan="2" style="border-bottom: solid lightgrey;">
@@ -93,61 +101,20 @@
           </td>
     </tr>
     
-    <tr id="none" style="display: none; text-align: center;">
+    <tr id="none" style="display:none">
           
-    <td>
-        <p style="color: dimgrey">No pending Accounts</p>
+    <td colspan="3" style="text-align: center">
+        <p style="color: dimgrey;">No search Results</p>
           </td>
-          
-          
           
           
     </tr>
-    
-    
-    <tr>
-        
-      <td style="width: 120px; padding: 20px;">
-          <img src="Images/ArtWorks/6-tin-can-felt-monsters.jpg" style="width:90px; height: 90px; border-radius: 50%;">
-          </td>    
-    <td>
-        Artwork
-          </td>
-          
-          <td style="width: 100px; text-align: center">
-        25 min
-          </td>
-    </tr>
+
+   
     
     
     
-    <tr>
-        
-      <td style="width: 120px; padding: 20px;">
-          <img src="Images/ArtWorks/6-tin-can-felt-monsters.jpg" style="width:90px; height: 90px; border-radius: 50%;">
-          </td>    
-    <td>
-        Artwork
-          </td>
-          
-          <td style="width: 100px; text-align: center">
-        25 min
-          </td>
-    </tr>
-    
-    <tr>
-        
-      <td style="width: 120px; padding: 20px;">
-          <img src="Images/ArtWorks/6-tin-can-felt-monsters.jpg" style="width:90px; height: 90px; border-radius: 50%;">
-          </td>    
-    <td>
-        Artwork
-          </td>
-          
-          <td style="width: 100px; text-align: center">
-        25 min
-          </td>
-    </tr>
+   
     
     <tr>
         
