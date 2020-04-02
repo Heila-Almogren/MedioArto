@@ -8,6 +8,11 @@
     src: url("fonts/Muli.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "SweetGetawayDemoRegular-2XyK";
+    src: url("fonts/Robot Crush copy.ttf") format("truetype");
+}
+
 body {
     margin: 0px;
   padding: 0;
@@ -21,6 +26,7 @@ position:fixed;
   min-width: 100%;
   min-height: 100%;
     z-index: -100;
+    background-color: black;
 }
 
 
@@ -42,15 +48,15 @@ position:fixed;
 
 
 div.titleDiv {
-    font-size: 100px;
-    font-family: "Muli-Reg";
+    font-size: 150px;
+    font-family: "SweetGetawayDemoRegular-2XyK";
     text-shadow: 0 0 10px #FFFFFF, 0 0 5px #FFFFFF;
-    
-    margin-top:200px;
+    height: 545px;
+    margin-top:155px;
     margin-left: 20px;
     z-index: 100;
     width: 100px;
-    font-weight:600;
+    
 }
 
 
