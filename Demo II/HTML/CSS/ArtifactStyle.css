@@ -1,122 +1,123 @@
 @font-face {
-    font-family: "Muli-ExtraLightItalic";
-    src: url("fonts/Muli-ExtraLightItalic.ttf") format("truetype");
+  font-family: "Muli-ExtraLightItalic";
+  src: url("fonts/Muli-ExtraLightItalic.ttf") format("truetype");
 }
+
 @font-face {
-    font-family: 'Muli-Reg';
-    src: url("fonts/Muli.ttf") format("truetype");
+  font-family: 'Muli-Reg';
+  src: url("fonts/Muli.ttf") format("truetype");
 }
 
-html{
-    width:100%;
-    overflow-x: hidden !important;
+html {
+  width: 100%;
+  overflow-x: hidden !important;
 }
 
-body{
-    background-color: #ffcc00;
-    background-size:auto;
-    margin: 0 auto;
-    width:100%;
-overflow-x: hidden;
-}
-
-
-
-
-div.mainDiv{
-    margin-top: 80px;
-    display: inline-block;
-    border-radius: 30px;
-    border-color: orange;
-    border-style: dashed;
-    padding: 20px;
-    border-width: medium;
-    min-width: 90%;
-    
+body {
+  background-color: #ffcc00;
+  background-size: auto;
+  margin: 0 auto;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 
-div.TitleSyle{
-    font-family: "Muli-Reg";
-    font-size: 40px;
-    height: 80px;
-    color: black;
-    min-width: 100%;
-    
-    border-bottom-color: dodgerblue;
-    border-bottom-style: dashed;
-}
 
-div.ArtImg{
-    
-    
-    display: block;
-    width: 250px;
-    height: 250px;
 
-    margin-left: 20px;
-   border-radius: 50%;
-    
-    border-color: white;
-    border-style: dashed;
-    padding: 20px;
-}
+div.mainDiv {
+  margin-top: 80px;
+  display: inline-block;
+  border-radius: 30px;
+  border-color: orange;
+  border-style: dashed;
+  padding: 20px;
+  border-width: medium;
+  min-width: 90%;
 
-.ArtDes{
-    font-family : "Muli-Reg";
-    margin-left: 20px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 30px;
-    border-top-left-radius: 10px;
-    border-color: white;
-    border-style: dashed;
-    padding: 20px;
-    border-width: medium;
-    height: auto;
-    width: 250px;
 }
 
 
-.ArtHow{
-    font-family : "Muli-Reg";
-    margin-left: 20px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 30px;
-    border-top-left-radius: 10px;
-    border-color: white;
-    border-style: dashed;
-    padding: 20px;
-    border-width: medium;
-    height: auto;
-    width: auto;
+div.TitleSyle {
+  font-family: "Muli-Reg";
+  font-size: 40px;
+  height: 80px;
+  color: black;
+  min-width: 100%;
+
+  border-bottom-color: dodgerblue;
+  border-bottom-style: dashed;
 }
 
-div.collect{
-    position:relative;
-    margin-left:10%;
-    margin-bottom: 5%;
-    display: flex;
+div.ArtImg {
+
+
+  display: block;
+  width: 250px;
+  height: 250px;
+
+  margin-left: 20px;
+  border-radius: 50%;
+
+  border-color: white;
+  border-style: dashed;
+  padding: 20px;
+}
+
+.ArtDes {
+  font-family: "Muli-Reg";
+  margin-left: 20px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 10px;
+  border-color: white;
+  border-style: dashed;
+  padding: 20px;
+  border-width: medium;
+  height: auto;
+  width: 250px;
 }
 
 
-img.im{
-    border-radius: 50%;
-    height: 250px;
-    width: 250px;
-    overflow: hidden;
+.ArtHow {
+  font-family: "Muli-Reg";
+  margin-left: 20px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 10px;
+  border-color: white;
+  border-style: dashed;
+  padding: 20px;
+  border-width: medium;
+  height: auto;
+  width: auto;
+}
+
+div.collect {
+  position: relative;
+  margin-left: 10%;
+  margin-bottom: 5%;
+  display: flex;
 }
 
 
-div.HorizOrder{
-    display: inline-block;
+img.im {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
 }
 
-.num{
-    font-family: "Muli-Reg";
-    font-size: 30px;
-    font-weight: 600;
+
+div.HorizOrder {
+  display: inline-block;
+}
+
+.num {
+  font-family: "Muli-Reg";
+  font-size: 30px;
+  font-weight: 600;
 }
 
 
@@ -124,11 +125,11 @@ div.HorizOrder{
 
 
 input[type="checkbox"] {
-  display:none;
-    
+  display: none;
+
 }
 
-input:checked + .like-btn-svg{
+input:checked+.like-btn-svg {
   transition: background 1s steps(28);
   animation: fave-like-btn-svg 1s steps(28);
   background-position: -2800px 0;
@@ -138,55 +139,56 @@ input:checked + .like-btn-svg{
   0% {
     background-position: 0 0;
   }
+
   100% {
     background-position: -2800px 0;
   }
 }
 
-div.CommentArea{
-    padding: 20px;
+div.CommentArea {
+  padding: 20px;
 }
 
 
-input.commentBox{
-    width: 410px;
-    min-height: 70px;
-    height: auto;
-    border-radius: 30px;
-    border: solid orange;
-    text-decoration: none;
-    padding-left:15px;
-    font-size: 20px;
-    
+input.commentBox {
+  width: 410px;
+  min-height: 70px;
+  height: auto;
+  border-radius: 30px;
+  border: solid orange;
+  text-decoration: none;
+  padding-left: 15px;
+  font-size: 20px;
+
 }
 
-td.ReaderAlign{
-    text-align: center;
+td.ReaderAlign {
+  text-align: center;
 }
 
-table{
-    font-family :"Muli-Reg";
+table {
+  font-family: "Muli-Reg";
 }
 
 
-div.ReaderField{
-    padding-top: 20px;
-    border-top-color: green;
-    border-top-style: dashed;
-    text-align: center;
-    
-    
+div.ReaderField {
+  padding-top: 20px;
+  border-top-color: green;
+  border-top-style: dashed;
+  text-align: center;
+
+
 }
 
-.commentButton{
-    border-radius: 25px;
-    border-style: none;
-    text-decoration: none;
-    background-color: deepskyblue;
-    height: 50px;
-    width: 50px;
-    font-size: 20px;
-    
+.commentButton {
+  border-radius: 25px;
+  border-style: none;
+  text-decoration: none;
+  background-color: deepskyblue;
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+
 }
 
 
@@ -200,11 +202,11 @@ div.ReaderField{
 
 
 div.titleDiv {
-    font-size: 80px;
-    font-family: "Muli-Reg";
-    text-shadow: 0 0 10px #FFFFFF, 0 0 5px #FFFFFF;
-    position: fixed;
-    top:50%;
+  font-size: 80px;
+  font-family: "Muli-Reg";
+  text-shadow: 0 0 10px #FFFFFF, 0 0 5px #FFFFFF;
+  position: fixed;
+  top: 50%;
 }
 
 
@@ -212,45 +214,45 @@ div.titleDiv {
 
 
 
-div.footer{
-    
-    font-family: "Muli-ExtraLightItalic";
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 150px;
-    min-width: 100%;
-    
-    margin-top: auto;
-    padding: 50px;
-    overflow:scroll;
+div.footer {
+
+  font-family: "Muli-ExtraLightItalic";
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 150px;
+  min-width: 100%;
+
+  margin-top: auto;
+  padding: 50px;
+  overflow: scroll;
 }
 
-div.footerC{
-    display:inline-grid;
-    font-size: 16px;
-    margin-top: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-    
+div.footerC {
+  display: inline-grid;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+
 }
 
-div.col{
-    font-size: 14px;
-    display:flex;
-    position: inherit;
-    margin: 3px;
-    
+div.col {
+  font-size: 14px;
+  display: flex;
+  position: inherit;
+  margin: 3px;
+
 }
 
-div.brief{
-    font-family: "Muli-Reg";
-    text-align: justify;
-    border-right-color: solid;
-    border-right-style: dashed;
-    padding-right: 20px;
-    width: 250px;
-   font-weight: 400;
-    
+div.brief {
+  font-family: "Muli-Reg";
+  text-align: justify;
+  border-right-color: solid;
+  border-right-style: dashed;
+  padding-right: 20px;
+  width: 250px;
+  font-weight: 400;
+
 }
 
 /* Style all font awesome icons */
@@ -258,12 +260,12 @@ div.brief{
   padding: 10px;
   font-size: 20px;
   width: 12px;
-    height: 12px;
-  
+  height: 12px;
+
   text-decoration: none;
   border-radius: 50%;
-    margin-top: 10px;
-    margin-left: 5px;
+  margin-top: 10px;
+  margin-left: 5px;
 }
 
 /* Add a hover effect if you want */
@@ -296,17 +298,17 @@ div.brief{
 }
 
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-text.author{
-    
-    font-size: 20px;
+text.author {
+
+  font-size: 20px;
 }
 
-div.horizSpan{
-    display: flex;
+div.horizSpan {
+  display: flex;
 }
 
 
@@ -319,7 +321,7 @@ div.horizSpan{
   cursor: pointer;
   height: 0;
   width: 0;
-    
+
 }
 
 /* Create a custom checkbox */
@@ -330,16 +332,16 @@ div.horizSpan{
   height: 25px;
   width: 25px;
   background-color: #eee;
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 /* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
+.container:hover input~.checkmark {
   background-color: #ccc;
 }
 
 /* When the checkbox is checked, add a blue background */
-.container input:checked ~ .checkmark {
+.container input:checked~.checkmark {
   background-color: yellowgreen;
 }
 
@@ -351,7 +353,7 @@ div.horizSpan{
 }
 
 /* Show the checkmark when checked */
-.container input:checked ~ .checkmark:after {
+.container input:checked~.checkmark:after {
   display: block;
 }
 
@@ -368,14 +370,15 @@ div.horizSpan{
   transform: rotate(45deg);
 }
 
-.container {    /*keep*/
-    
+.container {
+  /*keep*/
+
   display: block;
   position: relative;
   padding-left: 35px;
-        margin-left: 30px;
-    
-    margin-bottom: 12px;
+  margin-left: 30px;
+
+
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 20px;
@@ -383,35 +386,36 @@ div.horizSpan{
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-   
+
 }
 
 
 .speech-bubble {
-	position: relative;
-	background: #ffffff;
-	border-radius:  30px;
-    z-index: 0;
-}
-.speech-bubble:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 60%;
-	width: 0;
-	height: 0px;
-	border: 10px solid transparent;
-	border-right-color: #ffffff;
-	border-left: 0;
-	margin-top: -25px;
-	margin-left: -7px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 30px;
+  z-index: 0;
 }
 
-::-webkit-input-placeholder{
-    color: lightgrey;
-    font-family: 'Muli-Reg';
-    font-size: 15px;
-    
+.speech-bubble:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 60%;
+  width: 0;
+  height: 0px;
+  border: 10px solid transparent;
+  border-right-color: #ffffff;
+  border-left: 0;
+  margin-top: -25px;
+  margin-left: -7px;
+}
+
+::-webkit-input-placeholder {
+  color: lightgrey;
+  font-family: 'Muli-Reg';
+  font-size: inherit;
+
 }
 
 
@@ -419,10 +423,10 @@ div.horizSpan{
 
 .tooltip {
   position: relative;
-    margin: auto;
-    margin-left: 10px;
-    margin-right: 10px;
-    cursor: help;
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: help;
 }
 
 .tooltip .tooltiptext {
@@ -461,7 +465,8 @@ div.horizSpan{
   position: absolute;
   left: -100vw;
 }
-[id='toggle-heart']:checked + label {
+
+[id='toggle-heart']:checked+label {
   color: #e2264d;
 }
 
@@ -470,4 +475,109 @@ div.horizSpan{
   color: white;
   font-size: 2em;
   cursor: pointer;
+}
+
+
+
+.ingred {
+  /*keep*/
+
+  display: block;
+  position: relative;
+width: 200px;
+
+
+
+  margin-bottom: 12px;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+
+
+.addIngre {
+  cursor: pointer;
+  outline: none;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: none;
+  background-color: green;
+  color: white;
+  font-size: 18px;
+  font-weight: bold
+}
+
+.removeIngre {
+    cursor: pointer;
+  outline: none;
+opacity: 0.5;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: none;
+  background-color: #cc0000;
+  color: white;
+  font-size: 20px;
+  font-weight: bold
+}
+
+
+
+.addSte {
+  cursor: pointer;
+  outline: none;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: none;
+  background-color: green;
+  color: white;
+  font-size: 18px;
+  font-weight: bold
+}
+
+.removeSte {
+    cursor: pointer;
+  outline: none;
+opacity: 0.5;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: none;
+  background-color: #cc0000;
+  color: white;
+  font-size: 18px;
+  font-weight: bold
+}
+
+.removeIngre:hover {
+opacity: 1;
+
+}
+
+.removeSte:hover {
+opacity: 1;
+
+}
+
+
+#add {
+  cursor: pointer;
+}
+
+
+#stepsTable{
+    counter-reset: row-num;
+}
+
+#stepsTable tr {
+  counter-increment: row-num;
+}
+#stepsTable tr td:nth-child(2)::before {
+    content: counter(row-num);
 }
