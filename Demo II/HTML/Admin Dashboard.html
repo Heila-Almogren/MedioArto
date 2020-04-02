@@ -10,27 +10,30 @@
       <link rel="stylesheet" type="text/css" href="CSS/SearchResultStyle.css">
           <link rel="stylesheet" type="text/css" href="CSS/footer.css">
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <script src="JS/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="JS/menuBar.js"></script>
       <script>
-          
+          window.onload = function(){
+              var x = document.getElementById("pendingAcc").rows.length;
+    document.getElementById("total").innerText = "TOTAL: " + (x-2) + " PENDING";
+
+}
           function done(e) {
                 
                 var row = e.parentNode.parentNode;
                 row.parentNode.removeChild(row);
                 
-              var x = document.getElementById("#pendingAcc").length;
-              document.getElementById("#none").style.display = "block";
+              var x = document.getElementById("pendingAcc").rows.length;
               if (x < 10){
-                  
-                  var table = document.getElementById("#pendingAcc");
-                var row = table.insertRow(table.rows.length);
-                
-                var cell1 = row.insertCell(0); // Column #0
-                cell1.innerHTML = "<p>hi</p>";
+                              document.getElementById("none").style.display = "block";
+                  document.getElementById("total").innerText = "TOTAL: " + (x-2) + " PENDING";
+
               };
                 
+              
+              
             };
       
       </script>
@@ -110,9 +113,9 @@
           
     </tr>
     
-    <tr id="none" style="display: none;">
+    <tr id="none" style="display: none; text-align: center;">
           
-    <td colspan="4" style="border-bottom: solid lightgrey; text-align: center; ">
+    <td>
         <p style="color: dimgrey">No pending Accounts</p>
           </td>
           
@@ -149,7 +152,7 @@
     </tr>
       </table>
       
-      <p style="font-size: 15px; font-family: 'Muli-Reg';  width: 50%; margin: auto; margin-bottom: 100px;">TOTAL: 4 PENDING</p>
+      <p id="total" style="font-size: 15px; font-family: 'Muli-Reg';  width: 50%; margin: auto; margin-bottom: 100px;">TOTAL: 4 PENDING</p>
 
 
 
