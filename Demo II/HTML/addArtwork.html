@@ -29,10 +29,17 @@
           
           function returnItem(e){
               var optionVal = $(e).closest("td").next().children("label").html();
-              var newOption = new Option(""+optionVal);
-              $("#suggests").append(newOption);
               
-          }
+                 var newOption = new Option(""+optionVal);
+              $("#suggests").append(newOption);
+                 
+              
+              
+          };
+          
+          
+          
+    
     
       </script>
       <script>
@@ -206,6 +213,24 @@ if(inputContent != ""){
                             <input id="addIngreField" type="text" maxlength="300"  style="outline: none;  border-radius: 20px; font-size: 15px; height: 30px; width: 95%; border: none; text-align:left"  list="suggests">
                             
                             <datalist id="suggests">
+
+   <option value="Plastic Bags">
+<option value="colored paper">
+<option value="wood frames">
+<option value="Used Fabrics">
+<option value="Terapak Cartons">
+<option value="Hair ties">
+<option value="Newspaper">
+<option value="Cardboards">
+<option value="Pizza Box">
+<option value="Aluminum Foil">
+<option value="Cloth Hangers">
+<option value="CD's">
+<option value="Leather">                             
+</datalist>
+                            
+                            
+                            <datalist id="suggestsDefault">
 
    <option value="Plastic Bags">
 <option value="colored paper">
