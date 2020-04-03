@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html> 
+
+  <head>
+      
+    <title>MEDDIO ARTO</title>
+      
+      
+    <link rel="stylesheet" type="text/css" href="CSS/Navigation-visitor.css">
+      <link rel="stylesheet" type="text/css" href="CSS/addArtwork.css">
+          <link rel="stylesheet" type="text/css" href="CSS/footer.css">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="JS/menuBar.js"></script>
+            <script>
+          window.onload = function(){
+        var x = document.querySelectorAll(".featuredImg").length;
+
+
+    document.getElementById("total").innerText = "TOTAL: " + x + " RESULTS";
+
+};
+          
+      
+      </script>
+      
+      <script>
+      
+      function addStep(){
+               
+            
+            
+                var table = document.getElementById("stepsTable");
+                var row = table.insertRow(table.rows.length);
+                
+            var cell0 = row.insertCell(0);
+            
+            cell0.style.height = "30px";
+            cell0.style.width = "50px";
+            cell0.style.paddingBottom = "10px";
+            cell0.style.paddingLeft = "10px";
+            cell0.innerHTML = x++;
+            
+            
+            var cell1 = row.insertCell(1);
+            
+            cell1.style.height = "30px";
+            cell1.style.width = "200px";
+            cell1.style.paddingBottom = "10px";
+            cell1.style.paddingLeft = "10px";
+            
+            var step = document.createElement("input");
+			    step.type = "text";
+            step.style.padding = "10px";
+            step.style.height = "25px";
+            step.style.width = "270px";
+            step.style.borderStyle = "none";
+            step.style.borderRadius = "25px";
+			    cell1.appendChild(step);
+               
+            
+            
+            
+            
+        }
+      </script>
+      
+  </head>
+
+    
+    
+  <body>
+    <div id="MenuBar">
+
+      <a>
+        <img src="Images/Neutral-placeholder-profile.jpg" class="userProfileIcon" id="x"></a>
+
+      <a href="About-Visitor.html">
+        <p class="menuText">About</p>
+      </a>
+      <a href="AllArtists.html">
+        <p class="menuText">Artists</p>
+      </a>
+      <a href="AllArtworks.html">
+        <p class="menuText">Artifacts</p>
+      </a>
+      <a href="visiterPage.html">
+        <p class="menuText">Home</p>
+      </a>
+
+      <img href="MedioArto.html" src="Images/Leaves.png" alt="logo" class="logo">
+    </div>
+
+
+
+    <!--pop-up menu of profile image-->
+
+   <nav class="form-popup" id="myForm">
+      
+
+        <p class="ProfileTitle">
+          Hello, Sara! 
+            
+          </p>
+
+
+
+
+
+
+        <a href="MedioArto.html">
+          <div class="ProfileOption">
+            &#x1f511; &nbsp;
+            Logout
+          </div>
+        </a>
+
+     
+    </nav>
+
+     
+      <div class="mainTitleDiv">
+         <p id="LDSA" style="margin-top: 450px;">
+             artist
+         </p>
+    
+    </div>
+      
+  <div style="height: auto; width: 500px; margin:auto; margin-top: 100px; margin-bottom: 50px; background-color: #D3D3D3; border-radius: 30px; vertical-align: middle; text-align: center; ">
+      <form>
+          <table style="text-align: left; margin: auto; width:350px; ">
+          <tr style="text-align: center">
+              <td colspan="2">
+              <p class="fieldTitle" style="color: gray; font-size: 17px;">General Information</p>
+              </td>
+              
+              
+              </tr>
+              <tr>
+              <td>
+              <p class="fieldTitle">Title</p>
+              </td>
+              <td>
+              <input type="text" id="title" name="title" placeholder="like: car using old paper" style="font-size: 17px;">
+              </td>
+          </tr>
+          
+          <tr>
+              <td>
+              <p class="fieldTitle">Date</p>
+              </td>
+              <td>
+              <input type="date" id="date" name="date" accept="application/msexcel"
+         value="2020-2-25"
+       min="2018-01-01" max="2020-2-25" style="font-size: 17px;">
+              </td>
+          </tr>
+          <tr>
+              <td colspan="2">
+              <p class="fieldTitle">Description</p>
+              </td>
+              
+          </tr>
+          
+          <tr>
+          <td colspan="2">
+              
+              <textarea style="height: 150px; text-align: left; margin-bottom: 50px; font-size: 17px" placeholder="give a brief decription about your work like the main idea or the general use.. but don't include the steps or any detailed information!"></textarea>
+              </td>
+          </tr>
+      </table>
+      </form>
+      
+     
+      </div>
+       
+
+      
+
+
+
+
+    <div class="footer">
+    
+    <div class="footerC brief">
+        Medio Arto is a platform for eco-friendly art to share ideas of recycling items that usually reside in the recycling bin.. go and share yours now!
+        </div>
+        
+        <div class="footerC">
+        Contact Us:
+        <div class=" footerC col">
+        email: &nbsp;
+        <a href="mailto:info@medioarto.com">info@medioarto.com</a> </div>
+        <div class=" footerC col">
+        tel: +966563636787</div>
+        
+        
+        <div class=" footerC col">
+        Address:</div>
+        
+        
+        <div class=" footerC col">
+        11314 Riyadh, Saudi Arabia</div>
+        </div>
+        
+        <div class="footerC">
+        Find Us on Social Media!
+        
+        
+        <div class=" footerC col">
+        <div class=" footerC col">
+        <a href="#" class="fa fa-twitter"></a>
+            &nbsp;
+        <a href="#" class="fa fa-facebook"></a> 
+            &nbsp;
+        <a href="#" class="fa fa-youtube"></a>     &nbsp;
+        <a href="#" class="fa fa-instagram"></a> 
+            </div>
+            
+            </div>
+        
+        
+        </div>
+          </div>
+  </body>
+
+</html>
+

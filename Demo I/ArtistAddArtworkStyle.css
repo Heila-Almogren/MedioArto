@@ -6,6 +6,10 @@
     font-family: 'Muli-Reg';
     src: url("fonts/Muli.ttf") format("truetype");
 }
+@font-face {
+    font-family: "SweetGetawayDemoRegular-2XyK";
+    src: url("fonts/Robot Crush copy.ttf") format("truetype");
+}
 
 body {
 background-image: url(Images/20.jpg);
@@ -32,6 +36,7 @@ div.mainDiv{
     margin-right: 5px;
     margin-bottom: 60px;
 }
+
 
 
 div.TitleSyle{
