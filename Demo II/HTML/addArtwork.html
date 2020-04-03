@@ -10,39 +10,41 @@
       <link rel="stylesheet" type="text/css" href="CSS/addArtwork.css">
           <link rel="stylesheet" type="text/css" href="CSS/footer.css">
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+          <script src="JS/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="JS/menuBar.js"></script>
             
-      
+      <script>
+      function removeItem(list) {
+
+ var item = $('input#' + list).val();
+  if($('option[value="' + item + '"]')) {
+   $('option[value="' + item + '"]').remove();
+  }
+  
+
+  
+}
+          
+          function returnItem(e){
+              var optionVal = $(e).closest("td").next().children("label").html();
+              var newOption = new Option(""+optionVal);
+              $("#suggests").append(newOption);
+              
+          }
+    
+      </script>
       <script>
           
-          function resetPlayerList(pos) {
- //Get player name
- var player = $('input#' + pos).val();
- //If player exists in datalist
-  if($('option[value="' + player + '"]')) {
-    //Remove player from datalist meaning other inputs cannot add the player
-   $('option[value="' + player + '"]').remove();
-  }; 
-  
-  //If changing a player, you need to add the old player back into the datalist. This code does not do that for you.
-  
-};
-   
-          
+      
           
       function addIngredient(){
                             var inputContent = document.getElementById("addIngreField").value;
 if(inputContent != ""){
                 var table = document.getElementById("ingredients");
                 
-               
-                /**/
-    
-          
-    
-    /**/
+   
                 
                 var row = table.insertRow(table.rows.length-1);
                 
@@ -50,11 +52,11 @@ if(inputContent != ""){
                 cell1.style.textAlign = "left";                
                 
                 
-                cell1.innerHTML = " <input class='removeIngre' type='button' value='-' onclick='removeIngredient(this)'>";
+                cell1.innerHTML = " <input class='removeIngre' type='button' value='-' onclick='returnItem(this); removeIngredient(this)'>";
                     
                 
               
-                    //+ document.getElementById("commentBox").Value;
+                   
                  var cell2 = row.insertCell(1);
                 
                 cell2.innerHTML = "<label class='ingred'>"+inputContent+"</label>";
@@ -73,13 +75,7 @@ if(inputContent != ""){
      
       </script>
       
-      <script>
-      
-      $(document).ready(function(){
-          
-         
-      });
-      </script>
+    
       
   </head>
 
@@ -142,7 +138,7 @@ if(inputContent != ""){
     
     </div>
       
-  <div style="height: 550px; width: 500px; margin:auto; margin-top: 100px; margin-bottom: 50px; background-color: #D3D3D3; border-radius: 30px; vertical-align: middle; text-align: center; ">
+  <div style="min-height: 550px; height: auto; width: 500px; margin:auto; margin-top: 100px; margin-bottom: 50px; background-color: #D3D3D3; border-radius: 30px; vertical-align: middle; text-align: center; ">
       <form>
           <table id="General Information" style="text-align: left; margin: auto; width:400px; display: none">
           <tr>
@@ -204,26 +200,30 @@ if(inputContent != ""){
               
            <tr id="addI">
                     <td style="text-align: left; width: 50px;">
-                        <input class="addIngre" type="button" value="+" onclick="addIngredient()">
+                        <input class="addIngre" type="button" value="+" onclick="removeItem('addIngreField');addIngredient()">
                         </td>
-                        <td style="border: solid black">
-                            <input id="addIngreField" type="text" maxlength="300"  style="outline: none;  border-radius: 20px; font-size: 15px; height: 30px; width: 95%; border: none; text-align: left" list="suggests" onchange="resetPlayerList('addIngreField')">
+                        <td>
+                            <input id="addIngreField" type="text" maxlength="300"  style="outline: none;  border-radius: 20px; font-size: 15px; height: 30px; width: 95%; border: none; text-align:left"  list="suggests">
+                            
                             <datalist id="suggests">
 
-   <option>Plastic Bags</option>
-<option>colored paper</option>
-<option>wood frames</option>
-<option>Used Fabrics</option>
-<option>Terapak Cartons</option>
-<option>Hair ties</option>
-<option>Newspaper</option>
-<option>Cardboards</option>
-<option>Pizza Box</option>
-<option>Aluminum Foil</option>
-<option>Cloth Hangers</option>
-<option>CD's</option>
-<option>Leather</option>                             
+   <option value="Plastic Bags">
+<option value="colored paper">
+<option value="wood frames">
+<option value="Used Fabrics">
+<option value="Terapak Cartons">
+<option value="Hair ties">
+<option value="Newspaper">
+<option value="Cardboards">
+<option value="Pizza Box">
+<option value="Aluminum Foil">
+<option value="Cloth Hangers">
+<option value="CD's">
+<option value="Leather">                             
 </datalist>
+                        
+                            
+                            
                         </td>
                     </tr>
           
@@ -231,7 +231,7 @@ if(inputContent != ""){
           
           
               <tr>
-                 <td colspan="2" style="text-align: right; height: 50px; border: solid black">
+                 <td colspan="2" style="text-align: right; height: 50px;">
               <button style="border: none; border-radius: 10px; height: 40px; width: 80px; color: dimgrey; font-size: 22px; background-color: darkgrey; " class="fieldTitle" >next</button>
               </td> 
               </tr>
