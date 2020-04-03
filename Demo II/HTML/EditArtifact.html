@@ -137,6 +137,15 @@ if(inputContent != ""){
     <script>
                 $(document).ready(function(){
                     
+                    $(".save").click(function(){
+                        confirm("are you sure you want to save changes?")
+                        //save changes..
+                    });
+                    
+                    $(".cancel").click(function(){
+                        //return to orignal artwork page
+                    });
+                    
                   
                       $("#addI").hover(
   function (e) {
@@ -227,6 +236,7 @@ if(inputContent != ""){
     </nav>
     
    <!--rgba(91, 146, 229, 1)-->
+    <form>
     
     <div style="background-color: white; min-width: 100%; height: 250px; text-align: center">
         
@@ -401,6 +411,14 @@ if(inputContent != ""){
                 
             </tr>
             
+            <tr>
+                <td colspan="2" style="height: 150px;">
+                    <button class="save">SAVE</button>
+                    &nbsp;
+                    <button class="cancel">CANCEL</button>
+                </td>
+            </tr>
+            
             
             
         
@@ -486,7 +504,7 @@ if(inputContent != ""){
         
         
         
-        
+       </form> 
    
      
 

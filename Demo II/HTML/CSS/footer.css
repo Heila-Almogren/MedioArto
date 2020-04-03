@@ -18,7 +18,7 @@ div.footer{
     
     font-family: "Muli-ExtraLightItalic";
     color: white;
-    background-color: rgba(169,169,169, 1);
+    background-color: #ffcc00;
     height: 160px;
     min-width: 100%;
     
@@ -36,7 +36,7 @@ div.footerC{
     margin-top: 20px;
     margin-left: 40px;
     margin-right: 40px;
-    
+    color: black;
 }
 
 div.col{
@@ -44,7 +44,7 @@ div.col{
     display:flex;
     position: inherit;
     margin: 3px;
-    
+    color: black;
 }
 
 div.brief{
@@ -52,6 +52,7 @@ div.brief{
     text-align: justify;
     border-right-color: solid;
     border-right-style:solid;
+    color: black;
     padding-right: 20px;
     width: 300px;
     height:130px;
@@ -64,7 +65,7 @@ div.brief{
   font-size: 20px;
   width: 12px;
     height: 12px;
-  
+  color: white !important;
   text-decoration: none;
   border-radius: 50%;
     margin-top: 10px;

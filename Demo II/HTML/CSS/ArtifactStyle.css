@@ -581,3 +581,7 @@ opacity: 1;
 #stepsTable tr td:nth-child(2)::before {
     content: counter(row-num);
 }
+
+.save , .cancel{
+    border: none; border-radius: 25px; background-color: #ffcc00; height: 50px; width: 120px; font-size: 20px; outline: none
+}

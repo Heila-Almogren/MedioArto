@@ -10,7 +10,32 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <script src="JS/menuBar.js"></script>
+    
     <script>
+    $(document).ready(function () {
+        var isVisitor = true;       //change this
+        if(isVisitor){
+            $('#brief').append("<input id='toggle-heart' type='checkbox'/><label for='toggle-heart' style='font-size: 20px;'>&hearts; &nbsp; </label> Favourite");
+
+        };
+        
+        var isArtist = true;   //change this
+        if(isArtist){
+            $('#brief').append("<td><a href='www.google.com'><img class='im' src='Images/set.png' style='height: 20px; width: 20px; '></a></td>");
+
+        };
+        
+        
+        
+    });
+    </script>
+    <script>
+        
+        
+            
+            
+      
+         
         
         function SendComment(){
             
@@ -122,7 +147,7 @@
         
         <table style="width: 800px; text-align: center; font-size: 18px; margin: auto; border-bottom: solid black; padding: 5px; vertical-align: middle;">
             
-            <tr>
+            <tr id="brief">
                 <td>
                     <img class="im" src="Images/person_110935.png" style="height: 20px; width: 20px; margin-top: 5px;"/> &nbsp;
                     By: Jiff Thomas
@@ -135,11 +160,7 @@
                     <img class="im" src="Images/clock.png" style="height: 20px; width: 20px; "> &nbsp; 25 minutes
                 </td>
                 
-                <td>
-                
-                <input id="toggle-heart" type="checkbox" />
-        <label for="toggle-heart" style="font-size: 20px;">&hearts; &nbsp; </label> Favourite
-                </td>
+               
             </tr>
         
         </table>
