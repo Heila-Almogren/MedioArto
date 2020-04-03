@@ -13,57 +13,72 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="JS/menuBar.js"></script>
-            <script>
-          window.onload = function(){
-        var x = document.querySelectorAll(".featuredImg").length;
-
-
-    document.getElementById("total").innerText = "TOTAL: " + x + " RESULTS";
-
-};
-          
+            
       
+      <script>
+          
+          function resetPlayerList(pos) {
+ //Get player name
+ var player = $('input#' + pos).val();
+ //If player exists in datalist
+  if($('option[value="' + player + '"]')) {
+    //Remove player from datalist meaning other inputs cannot add the player
+   $('option[value="' + player + '"]').remove();
+  }; 
+  
+  //If changing a player, you need to add the old player back into the datalist. This code does not do that for you.
+  
+};
+   
+          
+          
+      function addIngredient(){
+                            var inputContent = document.getElementById("addIngreField").value;
+if(inputContent != ""){
+                var table = document.getElementById("ingredients");
+                
+               
+                /**/
+    
+          
+    
+    /**/
+                
+                var row = table.insertRow(table.rows.length-1);
+                
+                var cell1 = row.insertCell(0);
+                cell1.style.textAlign = "left";                
+                
+                
+                cell1.innerHTML = " <input class='removeIngre' type='button' value='-' onclick='removeIngredient(this)'>";
+                    
+                
+              
+                    //+ document.getElementById("commentBox").Value;
+                 var cell2 = row.insertCell(1);
+                
+                cell2.innerHTML = "<label class='ingred'>"+inputContent+"</label>";
+                
+                document.getElementById("addIngreField").value = "";
+                
+          
+            }
+        };
+          
+          
+          function removeIngredient(e){
+            var row = e.parentNode.parentNode;
+                row.parentNode.removeChild(row);
+        };
+     
       </script>
       
       <script>
       
-      function addStep(){
-               
-            
-            
-                var table = document.getElementById("stepsTable");
-                var row = table.insertRow(table.rows.length);
-                
-            var cell0 = row.insertCell(0);
-            
-            cell0.style.height = "30px";
-            cell0.style.width = "50px";
-            cell0.style.paddingBottom = "10px";
-            cell0.style.paddingLeft = "10px";
-            cell0.innerHTML = x++;
-            
-            
-            var cell1 = row.insertCell(1);
-            
-            cell1.style.height = "30px";
-            cell1.style.width = "200px";
-            cell1.style.paddingBottom = "10px";
-            cell1.style.paddingLeft = "10px";
-            
-            var step = document.createElement("input");
-			    step.type = "text";
-            step.style.padding = "10px";
-            step.style.height = "25px";
-            step.style.width = "270px";
-            step.style.borderStyle = "none";
-            step.style.borderRadius = "25px";
-			    cell1.appendChild(step);
-               
-            
-            
-            
-            
-        }
+      $(document).ready(function(){
+          
+         
+      });
       </script>
       
   </head>
@@ -127,9 +142,9 @@
     
     </div>
       
-  <div style="height: auto; width: 500px; margin:auto; margin-top: 100px; margin-bottom: 50px; background-color: #D3D3D3; border-radius: 30px; vertical-align: middle; text-align: center; ">
+  <div style="height: 550px; width: 500px; margin:auto; margin-top: 100px; margin-bottom: 50px; background-color: #D3D3D3; border-radius: 30px; vertical-align: middle; text-align: center; ">
       <form>
-          <table style="text-align: left; margin: auto; width:350px; ">
+          <table id="General Information" style="text-align: left; margin: auto; width:400px; display: none">
           <tr>
               <td colspan="2">
               <p class="fieldTitle" style="color: gray; font-size: 22px;">General Information</p>
@@ -165,9 +180,61 @@
           <tr>
           <td colspan="2">
               
-              <textarea style="height: 150px; text-align: left; margin-bottom: 50px; font-size: 17px" placeholder="give a brief decription about your work like the main idea or the general use.. but don't include the steps or any detailed information!"></textarea>
+              <textarea style="height: 150px; text-align: left;  font-size: 17px" placeholder="give a brief decription about your work like the main idea or the general use.. but don't include the steps or any detailed information!"></textarea>
               </td>
           </tr>
+              <tr>
+                 <td colspan="2" style="text-align: right; height: 50px;">
+              <button style="border: none; border-radius: 10px; height: 40px; width: 80px; color: dimgrey; font-size: 22px; background-color: darkgrey; " class="fieldTitle" >next</button>
+              </td> 
+              </tr>
+      </table>
+          
+          
+          <table id="ingredients" style="text-align: left; margin: auto; width:400px; font-family: "Muli-Reg";">
+          <tr>
+              <td colspan="2">
+              <p class="fieldTitle" style="color: gray; font-size: 22px;">Ingredients</p>
+                 
+
+              </td>
+              
+              
+              </tr>
+              
+           <tr id="addI">
+                    <td style="text-align: left; width: 50px;">
+                        <input class="addIngre" type="button" value="+" onclick="addIngredient()">
+                        </td>
+                        <td style="border: solid black">
+                            <input id="addIngreField" type="text" maxlength="300"  style="outline: none;  border-radius: 20px; font-size: 15px; height: 30px; width: 95%; border: none; text-align: left" list="suggests" onchange="resetPlayerList('addIngreField')">
+                            <datalist id="suggests">
+
+   <option>Plastic Bags</option>
+<option>colored paper</option>
+<option>wood frames</option>
+<option>Used Fabrics</option>
+<option>Terapak Cartons</option>
+<option>Hair ties</option>
+<option>Newspaper</option>
+<option>Cardboards</option>
+<option>Pizza Box</option>
+<option>Aluminum Foil</option>
+<option>Cloth Hangers</option>
+<option>CD's</option>
+<option>Leather</option>                             
+</datalist>
+                        </td>
+                    </tr>
+          
+          
+          
+          
+              <tr>
+                 <td colspan="2" style="text-align: right; height: 50px; border: solid black">
+              <button style="border: none; border-radius: 10px; height: 40px; width: 80px; color: dimgrey; font-size: 22px; background-color: darkgrey; " class="fieldTitle" >next</button>
+              </td> 
+              </tr>
       </table>
       </form>
       
