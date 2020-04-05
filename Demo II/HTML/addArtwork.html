@@ -104,7 +104,11 @@ function removeIngredient(e) { //removes item from ingredients list
 
         warningS.innerHTML = "<p>Come on.. Add at least one step!</p>";
     }else{
-        $("#mainDiv").hide('slide', { direction: 'right' }, 450);
+        
+        $("#finalImage").show('slide', { direction: 'right' }, 450, function(){
+            $("#mainDiv").hide('slide', { direction: 'right' }, 450);
+        });
+        
         
             
         
@@ -414,7 +418,7 @@ if(inputContent != ""){
 
     </div>
 
-<div id="finalImage" style="height:200px; width: 400px; margin: auto; margin-top: 150px; text-align: center; z-index: -100">
+<div id="finalImage" style="height:200px; width: 400px; margin: auto; margin-top: 150px; text-align: center; z-index: -100; display: none" >
     <img src="Images/jumping.gif" style="height:200px; width: 200px; margin: auto; text-align: center;">
     <p id="finalStatement" style="text-align: center; font-size: 20px;">AH.. GORGEOUS! <br> WHAT A MARVELOUS ARTWORK! INIMITABLE TALENT!</p>
     <button type="button" style="border: none; border-radius: 15px; height: 40px; width: 100px; color: dimgrey; font-size: 22px; outline: none; background-color: darkgrey; color: white" class="fieldTitle" onclick="window.open('VisiterPage.html')">BACK</button>
