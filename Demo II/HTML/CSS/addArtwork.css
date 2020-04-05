@@ -31,6 +31,7 @@ html {
 }
 
 body {
+    font-family: "Muli-Reg";
   background-color: white;
   background-size: auto;
   margin: 0 auto;
@@ -301,7 +302,7 @@ opacity: 1;
     content: counter(row-num);
 }
 
-.warn{
+.warn , #finalStatement{
         font-family: "Muli-Reg";
 }
 
