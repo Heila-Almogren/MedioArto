@@ -95,7 +95,7 @@ function removeIngredient(e) { //removes item from ingredients list
           };
           
           
-          function validateStep(){
+          function validateStep(){          //validate steps before end of the process
                       var warningS = document.getElementById("warningS");
         warningS.innerHTML = "";
               var nIngredients = $('#Steps tr').length;
@@ -120,7 +120,7 @@ function removeIngredient(e) { //removes item from ingredients list
           };
           
   
-          function addStep(){
+          function addStep(){           
               var warningS = document.getElementById("warningS");
         warningS.innerHTML = "";
               var nSteps = $('#Steps tr').length;
