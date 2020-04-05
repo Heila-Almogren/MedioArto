@@ -165,9 +165,16 @@ if(inputContent != ""){
         
         
         function validateGeneral(){
-            $("#GeneralInformation").hide('slide', { direction: 'right' }, 250, function(){
+            
+            if(!$('#addArtworkForm')[0].checkValidity()){
+             document.getElementById("warnD").innerHTML = "<p style='color: firebrick; font-weight: bolder;'>&#x1F620; Naah.. fill all the fields first!</p>"
+               }else{
+                     $("#GeneralInformation").hide('slide', { direction: 'right' }, 250, function(){
                 $("#Ingredients").show('slide', { direction: 'left' }, 250)
             });
+               }
+            
+            
             
         }
           
@@ -239,7 +246,7 @@ if(inputContent != ""){
     </div>
 
     <div id="mainDiv" style="min-height: 550px; height: auto; width: 500px; margin:auto; margin-top: 100px; margin-bottom: 50px; background-color: #D3D3D3; border-radius: 30px; vertical-align: middle; text-align: center; ">
-      <form onsubmit="return false;">
+      <form id="addArtworkForm" onsubmit="return false;">
         <table id="GeneralInformation" style="text-align: left; margin: auto; width:400px;">
           <tr>
             <td colspan="2">
@@ -248,12 +255,15 @@ if(inputContent != ""){
 
 
           </tr>
+            <tr>
+                <td colspan="2" id="warnD"></td>
+            </tr>
           <tr>
             <td>
               <p class="fieldTitle">Title</p>
             </td>
             <td>
-              <input type="text" id="title" name="title" placeholder="like: car using old paper" style="font-size: 17px;">
+              <input type="text" id="title" name="title" placeholder="like: car using old paper" style="font-size: 17px;" required>
             </td>
           </tr>
 
@@ -262,7 +272,7 @@ if(inputContent != ""){
               <p class="fieldTitle">Date</p>
             </td>
             <td>
-              <input type="date" id="date" name="date" accept="application/msexcel" style="font-size: 17px;">
+              <input type="date" id="date" name="date" accept="application/msexcel" style="font-size: 17px;" required>
             </td>
           </tr>
           <tr>
@@ -275,11 +285,11 @@ if(inputContent != ""){
           <tr>
             <td colspan="2">
 
-              <textarea style="height: 150px; text-align: left;  font-size: 17px" placeholder="give a brief decription about your work like the main idea or the general use.. but don't include the steps or any detailed information!"></textarea>
+              <textarea style="height: 150px; text-align: left;  font-size: 17px" placeholder="give a brief decription about your work like the main idea or the general use.. but don't include the steps or any detailed information!" required></textarea>
             </td>
           </tr>
           <tr>
-            <td colspan="2" style="text-align: right; height: 50px;">
+            <td colspan="2" style="text-align: right; height: 80px;">
               <button type="button" style="border: none; border-radius: 10px; height: 40px; width: 80px; color: dimgrey; font-size: 22px; outline: none;  background-color: darkgrey; " class="fieldTitle" onclick="validateGeneral()">NEXT</button>
             </td>
           </tr>
