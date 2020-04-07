@@ -570,6 +570,18 @@ opacity: 1;
   cursor: pointer;
 }
 
+.instr{
+    counter-reset: row-num; 
+}
+
+
+.instr tr {
+  counter-increment: row-num;
+}
+.instr tr td:first-child::before {
+    content: counter(row-num);
+}
+
 
 #stepsTable{
     counter-reset: row-num;
