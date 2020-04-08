@@ -26,7 +26,7 @@ $(document).ready(function() {
                     
                     var editTabA = document.createElement("a");
                     
-                    editTabA.innerHTML = "<a href='FavouriteList.html'><div class='ProfileOption edit' style='color:black;'>&#128100; &nbsp; Edit Account</div></a>";
+                    editTabA.innerHTML = "<a href='ArtistsDashboard.html'><div class='ProfileOption edit' style='color:black;'>&#128100; &nbsp; Edit Account</div></a>";
                     
                     $(".ProfileTitle").after(editTabA);
                 };
@@ -37,7 +37,7 @@ $(document).ready(function() {
                     
                     var editTabV = document.createElement("a");
                     
-                    editTabV.innerHTML = "<a href='FavouriteList.html'><div class='ProfileOption edit' style='color:black;'>&#128100; &nbsp; Edit Account</div></a>";
+                    editTabV.innerHTML = "<a href='visitorDashboard.html'><div class='ProfileOption edit' style='color:black;'>&#128100; &nbsp; Edit Account</div></a>";
                     
                     $(".ProfileTitle").after(editTabV);
                 };
@@ -47,7 +47,7 @@ $(document).ready(function() {
         if(flag3){
             //for admin, show control panel only
                     var MngTab = document.createElement("a");
-                    MngTab.innerHTML = "<a href='FavouriteList.html'><div class='ProfileOption' style='color:black;'>&#9881; &nbsp; Control Panel</div></a>";
+                    MngTab.innerHTML = "<a href='Admin Dashboard.html'><div class='ProfileOption' style='color:black;'>&#9881; &nbsp; Control Panel</div></a>";
                     $(".ProfileTitle").after(MngTab);
                     
                 };
