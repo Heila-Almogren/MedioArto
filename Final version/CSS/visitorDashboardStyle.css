@@ -1,0 +1,144 @@
+
+
+
+@font-face {
+    font-family: "Muli-ExtraLightItalic";
+    src: url("Fonts/Muli-ExtraLightItalic.ttf") format("truetype");
+}
+
+
+
+@font-face {
+    font-family: "HappySweetyDemoRegular";
+    src: url("Fonts/HappySweetyDemoRegular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Muli-Reg";
+    src: url("Fonts/Muli.ttf") format("truetype");
+}
+
+html{
+    width:100%;
+    overflow-x: hidden !important;
+}
+
+body{
+    
+    background-size:auto;
+    margin: 0 auto;
+    width:100%;
+overflow-x: hidden;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+input.InputStyle{
+
+    font-family : "Muli-Reg";
+      display: inline-block;
+
+  font-size: 20px;
+    height: 60px;
+    width: 200;
+  padding-left: 20px;
+  margin-right: 20px;
+   border:none;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, .1);
+    
+}
+
+input.InputStyle[type=file]{
+    
+    padding-top: 30px;
+    font-size: 15px;
+    border:none;
+    padding-left: 20px;
+    background-color: rgba(0,0,0,0)
+}
+
+input:required {
+    box-shadow: none;
+    border-bottom-color: black;
+}
+
+.uploadAlias{
+    border:solid black;
+    border-radius: 15px;
+    height: 50px;
+    width: 510px;
+    margin-top: 50px;
+}
+
+
+::-webkit-input-placeholder{
+    color: lightgrey;
+    
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: opacity 0.0s 0.0s none;
+  opacity: 0;
+}
+
+
+Button{
+    background-color:darkgrey;
+    border-color: #484848;
+    border-radius: 5px;
+    border-style:none;
+    height: 50px;
+    width: 100px;
+    margin:auto;
+    margin-top: 30px;
+    
+    margin-bottom: 20px;
+     font-size: 15px;
+    font-family: 'Muli-Reg';
+    
+}
+
+Button:hover{
+    cursor: pointer;
+        background-color:grey;
+}
+
+
+textArea{
+    
+    font-family : "Muli-Reg";
+      display: inline-block;
+
+  font-size: 20px;
+    height: 60px;
+    width: 200;
+  padding: 20px;
+  margin-right: 20px;
+   border:none;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+
+
+.artworkImage{
+    
+display:block;
+    
+}
+
+
+.myArtwork{
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.myfav {height: 180px; width: 180px; border-radius:50%; background-image: url("Images/ArtWorks/6-tin-can-felt-monsters.jpg"); text-align: center; opacity:1; background-size: contain; position: relative; margin: auto;}

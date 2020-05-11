@@ -1,0 +1,120 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Visitor Registeration</title>
+
+
+    <link rel="stylesheet" type="text/css" href="CSS/Navigation-Guest.css">
+    <link rel="stylesheet" type="text/css" href="CSS/RegisterStyle.css">
+    <link rel="stylesheet" type="text/css" href="CSS/footer.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="JS/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="JS/FitText.js/jquery.fittext.js"></script>
+    <script src="JS/menuBar.js"></script>
+    <script src="JS/flip/dist/jquery.flip.js"></script>
+    <script src="JS/flip/dist/jquery.flip.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $('.blockline').show('slide', {
+                direction: 'right'
+            }, 350);
+
+
+            //back to log in
+            $('.BoxSmall, #done').click(function() {
+                $('.blockline').hide('slide', {
+                    direction: 'right'
+                }, 350, function() {
+                    window.location.href = "Login.php";
+                });
+            });
+
+
+            $('form').submit(function(/*e*/) { //when form is submitted
+               // e.preventDefault();
+                $('form').hide();
+                $('.back').show();  //back says that you registered succesfully
+				
+				
+            });
+			
+			
+
+
+
+        });
+    </script>
+</head>
+
+<body>
+
+
+
+
+
+    <div class="nav">           
+
+
+
+
+        <a  href="ChooseRole.php">Register</a>
+        <a href="Login.php">Login</a>
+        <a href="About-Guest.php">About</a>
+        <a href="MedioArto.php">Home</a>
+
+        <img src="Images/Leaves.png" alt="logo" class="logo">
+    </div>
+
+
+
+
+ <!--side menu-->
+    <div class="skeleton" style="text-align: center">
+
+        <div class="blockline" style="display: none;">
+
+           
+
+            <div class="BoxStyle" style="text-align: center; height:auto; margin-top: 150px;">
+
+
+             
+
+               
+
+                <div class="back">
+                    <!--registered succesfully-->
+                    <img src="Images/Check.png" style="height: 40px; padding-bottom: 20px; padding-top: 40px;"><br>
+                    Nice name! Congrats, you've registered succesfully &#128077; <br>
+                    <button class="ButtonStyle" id="done">Back</button>
+                </div>
+
+               
+
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>

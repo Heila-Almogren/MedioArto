@@ -1,0 +1,85 @@
+
+
+
+@font-face {
+    font-family: "Muli-ExtraLightItalic";
+    src: url("Fonts/Muli-ExtraLightItalic.ttf") format("truetype");
+}
+
+
+
+@font-face {
+    font-family: "HappySweetyDemoRegular";
+    src: url("Fonts/HappySweetyDemoRegular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Muli-Reg";
+    src: url("Fonts/Muli.ttf") format("truetype");
+}
+
+
+html{
+    width:100%;
+    overflow-x: hidden !important;
+}
+
+body{
+    background-color: white;
+    background-size:auto;
+    margin: 0 auto;
+    
+    width:100%;
+overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+
+#featured{
+    
+    background-color: white;
+    height: auto;
+    min-width: 100%;
+    overflow: scroll;
+    text-align: center;
+    padding-top: 30px;
+    overflow: scroll;
+    display: flex;
+}
+
+.featuredArtTitle{
+margin:auto;
+    width: 350px;
+    height: 60px;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 100px;
+    font-family: "flores";
+    border-bottom-color: black;
+    border-bottom-style:solid;
+}
+.featuredImg{
+    
+    height: 200px;
+    width: 200px;
+    
+    border-radius: 50%;
+    
+    
+}
+
+.featuredImg:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+figure{
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+       font-family: "Muli-Reg";
+    font-size: 15px;
+    margin:50px;
+    
+}

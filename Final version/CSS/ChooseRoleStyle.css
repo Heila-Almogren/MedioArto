@@ -1,0 +1,96 @@
+
+
+
+@font-face {
+    font-family: "Muli-ExtraLightItalic";
+    src: url("Fonts/Muli-ExtraLightItalic.ttf") format("truetype");
+}
+
+
+
+@font-face {
+    font-family: "HappySweetyDemoRegular";
+    src: url("Fonts/HappySweetyDemoRegular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Muli-Reg";
+    src: url("Fonts/Muli.ttf") format("truetype");
+}
+
+body{
+    background-color: dodgerblue;
+    background-size:auto;
+    margin: 0 auto;
+    font-family: "Muli-Reg";
+    width:100%;
+overflow-x: hidden;
+}
+
+
+.choose{
+    min-width: 100%;
+    text-align: center;
+    font-family: "Muli-Reg";
+    color: white;
+    border: solid rgba(0,0,0,0);;
+    
+    
+}
+
+
+fieldset{
+    border: solid white;
+    margin: 100px;
+    margin-bottom: 0px;
+    height: 500;
+    border-radius: 40px;
+      text-align: center;
+    border: solid rgba(0,0,0,0);
+    
+    
+}
+
+
+
+legend{
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 50px;
+}
+
+.role{
+cursor: pointer;
+    display: inline-block;
+}
+.roleImg{
+    height: 200px;
+}
+
+.roleTitle{
+    font-size: 25px;
+}
+
+.roleDesc{
+    font-size: 15px;
+    width: 300px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.verticalLine {
+    width: 0px;
+    height: 400px;
+  border-left: thin solid black;
+    border-right: medium solid black;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+
+.skeleton{
+    height: 700px;
+}

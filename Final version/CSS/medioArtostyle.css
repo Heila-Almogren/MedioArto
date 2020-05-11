@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "Muli-ExtraLightItalic";
+    src: url("fonts/Muli-ExtraLightItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Muli-Reg";
+    src: url("fonts/Muli.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "SweetGetawayDemoRegular-2XyK";
+    src: url("fonts/Robot Crush copy.ttf") format("truetype");
+}
+
+body {
+    margin: 0px;
+  padding: 0;
+    background-color: dodgerblue;
+}
+
+#myVideo {
+position:fixed;
+    top:0;
+    left:0;
+  min-width: 100%;
+  min-height: 100%;
+    z-index: -100;
+    background-color: black;
+}
+
+
+/*Scroll Bar 
+::-webkit-scrollbar {
+  width: 10px;
+    color: black;
+    opacity: 1;
+    border-radius: 20px;
+    margin-right: 20px;
+    
+}
+*/
+
+.content {
+  color: #f1f1f1;
+  width: 100%;
+}
+
+
+div.titleDiv {
+    font-size: 150px;
+    font-family: "SweetGetawayDemoRegular-2XyK";
+    text-shadow: 0 0 10px #FFFFFF, 0 0 5px #FFFFFF;
+    height: 545px;
+    margin-top:155px;
+    margin-left: 20px;
+    z-index: 100;
+    width: 100px;
+    
+}
+
+
+
+
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
